@@ -38,8 +38,8 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white dark:bg-[--color-dark-bg] shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <nav className="bg-white dark:bg-[--color-dark-bg] shadow-md px-4">
+      <div className="container mx-auto py-4 flex justify-between items-center">
         <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" />
             <AvatarFallback>JL</AvatarFallback>
