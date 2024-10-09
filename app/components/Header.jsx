@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Switch } from "@/components/ui/switch";
 import Menu from "./Menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -39,27 +40,30 @@ export default function Header() {
   return (
     <nav className="bg-white dark:bg-[--color-dark-bg] shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-[--color-dark-text] dark:text-white">
-          <Link href="/">Julien Le Mee</Link>
-        </div>
+        <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>JL</AvatarFallback>
+        </Avatar>
+
 
         {/* Menu pour desktop */}
-        {/* <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-300">Home</Link>
+        <div className="hidden md:flex space-x-6">
+            <Menu />
+          {/* <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-300">Home</Link>
           <Link href="/about" className="hover:text-gray-600 dark:hover:text-gray-300">About</Link>
           <Link href="/services" className="hover:text-gray-600 dark:hover:text-gray-300">Services</Link>
-          <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-300">Contact</Link>
-        </div> */}
+          <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-300">Contact</Link> */}
+        </div>
 
-        <Menu />
 
         {/* Bouton de mode sombre */}
         <div className="flex items-center space-x-4">
-          <Switch
-            checked={isDarkMode}
-            onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
-          />
+            <div className="hidden md:flex ">
+                <Switch
+                    checked={isDarkMode}
+                    onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
+                />
+            </div>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
@@ -89,6 +93,10 @@ export default function Header() {
             <li>
               <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-300">Contact</Link>
             </li>
+            <Switch
+                checked={isDarkMode}
+                onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
+            />
           </ul>
         </div>
       )}

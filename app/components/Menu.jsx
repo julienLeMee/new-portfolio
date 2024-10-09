@@ -55,7 +55,7 @@ const components = [
 
 export default function Menu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu >
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
