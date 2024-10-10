@@ -4,37 +4,35 @@ import BoxReveal from "@/components/ui/box-reveal";
 export default function RevealBox() {
   return (
     <div className="w-full max-w-lg items-center justify-center overflow-hidden pt-8">
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+      <BoxReveal boxColor={"#637E40"} duration={0.5}>
         <p className="text-[3.5rem] font-semibold">
-          Magic UI<span className="text-[#5046e6]">.</span>
+          Julien Le Mée<span className="text-[#637E40]">.</span>
         </p>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+      <BoxReveal boxColor={"#637E40"} duration={0.5}>
         <h2 className="mt-[.5rem] text-[1rem]">
-          UI library for{" "}
-          <span className="text-[#5046e6]">Design Engineers</span>
+            Développeur web full stack
         </h2>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+      <BoxReveal boxColor={"#637E40"} duration={0.5}>
         <div className="mt-6">
           <p>
-            -&gt; 20+ free and open-source animated components built with
-            <span className="font-semibold text-[#5046e6]"> React</span>,
-            <span className="font-semibold text-[#5046e6]"> Typescript</span>,
-            <span className="font-semibold text-[#5046e6]"> Tailwind CSS</span>,
+          Passionné par l'amélioration constante de mes compétences, j'apprends et me perfectionne chaque jour pour relever de nouveaux défis.
+            <span className="font-semibold text-[#637E40]"> PHP</span>,
+            <span className="font-semibold text-[#637E40]"> Next JS</span>,
+            <span className="font-semibold text-[#637E40]"> Ruby on Rails</span>,
             and
-            <span className="font-semibold text-[#5046e6]"> Framer Motion</span>
-            . <br />
-            -&gt; 100% open-source, and customizable. <br />
+            <span className="font-semibold text-[#637E40]"> Framer Motion</span>
+            .
           </p>
         </div>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
-      </BoxReveal>
+      {/* <BoxReveal boxColor={"#ffbd7a"} duration={0.5}>
+        <Button className="mt-[1.6rem] bg-[#ffbd7a]">Explore</Button>
+      </BoxReveal> */}
     </div>
   );
 }

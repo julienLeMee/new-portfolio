@@ -5,13 +5,17 @@ import Hero from "./components/Hero";
 import InfiniteSlider from "./components/InfiniteSlider";
 import DotBg from "./components/DotBg";
 import MagicalCard from "./components/MagicalCard";
+import RevealBox from "./components/RevealBox";
+import RevealText from "./components/RevealText";
 
 export default function Home() {
   return (
     <>
       <main className="h-full min-h-screen bg-white dark:bg-background text-[--color-dark-bg] dark:text-white">
         <Header />
+        {/* <RevealBox /> */}
         <Hero />
+        <RevealText />
         <DotBg />
         <MagicalCard />
         <InfiniteSlider />

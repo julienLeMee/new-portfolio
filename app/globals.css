@@ -16,6 +16,7 @@ body {
   :root {
     --color-dark-bg: #171717;
     --color-dark-text: #171717;
+    --color-orange: #ffbd7a;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
