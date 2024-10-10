@@ -36,20 +36,8 @@ const technologies = [
         img: "/logos/css.svg",
     },
     {
-        name: "HTML",
-        img: "/logos/html.svg",
-    },
-    {
         name: "JavaScript",
         img: "/logos/javascript.svg",
-    },
-    {
-        name: "Vercel",
-        img: "/logos/vercel.svg",
-    },
-    {
-        name: "Figma",
-        img: "/logos/figma.svg",
     },
     {
         name: "Three.js",

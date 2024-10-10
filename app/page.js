@@ -7,6 +7,8 @@ import DotBg from "./components/DotBg";
 import MagicalCard from "./components/MagicalCard";
 import RevealBox from "./components/RevealBox";
 import RevealText from "./components/RevealText";
+import TextFade from "./components/TextFade";
+import { LogoCloud } from "./components/LogoCloud";
 
 export default function Home() {
   return (
@@ -18,10 +20,12 @@ export default function Home() {
         <RevealText />
         <DotBg />
         <MagicalCard />
+        <TextFade />
         <InfiniteSlider />
         <div className="container mx-auto p-4">
           <Collapsible />
         </div>
+        <LogoCloud />
       </main>
     </>
   );
