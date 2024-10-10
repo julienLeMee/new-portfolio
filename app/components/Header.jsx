@@ -13,14 +13,12 @@ export default function Header() {
 
   // Vérifie la préférence de l'utilisateur et applique le mode correspondant
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    const savedTheme = localStorage.getItem("theme") || "light";
+    const isDarkMode = savedTheme === "dark";
+    setIsDarkMode(isDarkMode); // Mise à jour avec l'état initial correct
+    document.documentElement.classList.toggle("dark", isDarkMode);
   }, []);
+
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -38,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white dark:bg-[--color-dark-bg] shadow-md px-4">
+    <nav className="bg-white dark:bg-background shadow-md px-4">
       <div className="container mx-auto py-4 flex justify-between items-center">
         <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" />
@@ -69,7 +67,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               className="text-2xl focus:outline-none"
-              onClick={toggleMobileMenu} // Ajout de l'événement au clic
+              onClick={toggleMobileMenu}
             >
               {isMobileMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />} {/* Icone burger ou croix */}
             </button>

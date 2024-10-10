@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="bg-white dark:bg-[--color-dark-bg] py-10 px-4">
+    <section className="bg-white dark:bg-background py-10 px-4">
       <div className="container">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
           Salut, je suis Julien Le Mée,

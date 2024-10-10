@@ -9,7 +9,7 @@ import MagicalCard from "./components/MagicalCard";
 export default function Home() {
   return (
     <>
-      <main className="h-full min-h-screen bg-white dark:bg-[--color-dark-bg] text-[--color-dark-bg] dark:text-white">
+      <main className="h-full min-h-screen bg-white dark:bg-background text-[--color-dark-bg] dark:text-white">
         <Header />
         <Hero />
         <DotBg />
