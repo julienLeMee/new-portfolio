@@ -32,10 +32,6 @@ const technologies = [
         img: "/logos/sass.svg",
     },
     {
-        name: "CSS",
-        img: "/logos/css.svg",
-    },
-    {
         name: "JavaScript",
         img: "/logos/javascript.svg",
     },
@@ -50,10 +46,6 @@ const technologies = [
     {
         name: "GitHub",
         img: "/logos/github-icon.svg",
-    },
-    {
-        name: "SQL",
-        img: "/logos/mysql.svg",
     },
 ];
 
