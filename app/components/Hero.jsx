@@ -19,7 +19,9 @@ export default function Hero() {
           Passionné par l'amélioration constante de mes compétences, j'apprends et me perfectionne chaque jour pour relever de nouveaux défis.
         </p> */}
 
-        <RevealBox />
+        <div className="max-w-[850px] m-auto">
+                <RevealBox />
+        </div>
 
         <BoxReveal boxColor={"#637E40"} duration={0.5}>
             <div className="flex gap-4">
