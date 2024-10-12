@@ -13,7 +13,7 @@ import { LogoCloud } from "./components/LogoCloud";
 export default function Home() {
   return (
     <>
-      <main className="h-full min-h-screen bg-white dark:bg-background text-[--color-dark-bg] dark:text-white">
+      <main className="h-full min-h-screen bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
         <Header />
         {/* <RevealBox /> */}
         <Hero />

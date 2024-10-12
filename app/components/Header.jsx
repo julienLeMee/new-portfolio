@@ -36,12 +36,16 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white dark:bg-background shadow-md px-4">
-      <div className="container mx-auto py-4 flex justify-between items-center">
-        <Avatar>
+    <nav className="bg-white dark:bg-background px-4">
+      <div className="w-full max-w-[1920px] mx-auto py-4 flex justify-between items-center">
+        {/* <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" />
             <AvatarFallback>JL</AvatarFallback>
-        </Avatar>
+        </Avatar> */}
+        <p className="text-base font-bold leading-[1.1] flex gap-2 items-center">
+            <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M13.5 6L10 18.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.5 8.5L3 12L6.5 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.5 8.5L21 12L17.5 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Julien Le Mee
+        </p>
 
 
         {/* Menu pour desktop */}

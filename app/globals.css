@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: Geist, Helvetica, sans-serif;
+  /* font-family: Geist, Helvetica, sans-serif; */
+  font-family: 'PP Neue Montreal', sans-serif;
 }
 
 @layer utilities {
@@ -14,9 +15,10 @@ body {
 
 @layer base {
   :root {
-    --color-dark-bg: #171717;
-    --color-dark-text: #171717;
+    --color-dark-bg: #181818;
+    --color-dark-text: #181818;
     --color-orange: #ffbd7a;
+    --color-pink: #E3AFBE;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -45,7 +47,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 0, 0%, 9.4%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;

@@ -6,29 +6,24 @@ import BoxReveal from "@/components/ui/box-reveal";
 
 export default function Hero() {
   return (
-    <section className="bg-white dark:bg-background py-10 px-4">
-      <div className="container">
-        {/* <h1 className="text-6xl font-bold text-gray-900 dark:text-white">
-          Julien Le Mée
-        </h1>
-        <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mt-4">
-          Développeur web full stack
-        </h3>
-
-        <p className="text-xl text-gray-600 dark:text-gray-400 mt-4 max-w-2xl">
-          Passionné par l'amélioration constante de mes compétences, j'apprends et me perfectionne chaque jour pour relever de nouveaux défis.
-        </p> */}
-
-        <div className="max-w-[850px] m-auto">
-                <RevealBox />
-        </div>
-
-        <BoxReveal boxColor={"#637E40"} duration={0.5}>
+    <section className="flex flex-1 flex-col px-3 md:px-6 lg:px-10 h-svh justify-end pb-20 pt-[88px]">
+      <div className="flex flex-col text-left mx-auto w-full max-w-[1920px] relative z-[1]">
+        <p className="min-w-full pb-1 font-mono text-[13px] uppercase">[000. Where It All Starts]</p>
+            <h1 className="w-full text-[40px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
+            Hi I'm Julien
+            <br />
+            full stack
+            <br />
+            web developer
+            </h1>
+            <p className="max-w-[920px] text-2xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] md:py-8 w-full">
+            I learn and improve every day to take on new challenges.
+            </p>
             <div className="flex gap-4">
                 <ShinyBadge />
                 <GradienBadge />
             </div>
-        </BoxReveal>
+
 
       </div>
     </section>
