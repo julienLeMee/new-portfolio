@@ -60,7 +60,7 @@ export default function Header() {
 
         {/* Bouton de mode sombre */}
         <div className="flex items-center space-x-4">
-            <div className="flex ">
+            <div className="flex">
                 <Switch
                     checked={isDarkMode}
                     onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
