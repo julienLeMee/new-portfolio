@@ -60,7 +60,7 @@ export default function Header() {
 
         {/* Bouton de mode sombre */}
         <div className="flex items-center space-x-4">
-            <div className="hidden md:flex ">
+            <div className="flex ">
                 <Switch
                     checked={isDarkMode}
                     onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
@@ -68,7 +68,7 @@ export default function Header() {
             </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden flex">
             <button
               className="text-2xl focus:outline-none"
               onClick={toggleMobileMenu}
@@ -81,8 +81,8 @@ export default function Header() {
 
       {/* Menu pour mobile */}
       {isMobileMenuOpen && (
-        <div className="md:hidden">
-          <ul className="space-y-4 px-4 pb-4">
+        <div className="md:hidden mr-[-1rem] ml-[-1rem]">
+          <ul className="space-y-4 px-4 pb-4 h-[90vh]">
             <li>
               <Link href="/" className="hover:text-gray-600 dark:hover:text-gray-300">Home</Link>
             </li>
@@ -95,10 +95,10 @@ export default function Header() {
             <li>
               <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-300">Contact</Link>
             </li>
-            <Switch
+            {/* <Switch
                 checked={isDarkMode}
                 onCheckedChange={toggleDarkMode} // Change le mode sombre quand le switch est basculé
-            />
+            /> */}
           </ul>
         </div>
       )}
