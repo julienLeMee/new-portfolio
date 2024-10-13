@@ -94,4 +94,14 @@ body {
   .rotate {
     animation: rotate 4s linear infinite;
   }
+
+  .scrollbar-hide {
+    overflow: -moz-scrollbars-none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer et Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari et Opera */
+  }
 }

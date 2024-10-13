@@ -4,12 +4,12 @@ import { Collapsible } from "./components/Collapsible";
 import Hero from "./components/Hero";
 import InfiniteSlider from "./components/InfiniteSlider";
 import DotBg from "./components/DotBg";
-import MagicalCard from "./components/MagicalCard";
 import RevealBox from "./components/RevealBox";
 import RevealText from "./components/RevealText";
 import TextFade from "./components/TextFade";
 import { LogoCloud } from "./components/LogoCloud";
 import ButtonSection from "./components/ButtonSection";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
         {/* <RevealBox /> */}
         <Hero />
         <RevealText />
-        <DotBg />
-        <MagicalCard />
-        <TextFade />
+        <Projects />
+        {/* <DotBg /> */}
+        {/* <TextFade /> */}
         <InfiniteSlider />
         <ButtonSection />
         <div className="container mx-auto p-4">
