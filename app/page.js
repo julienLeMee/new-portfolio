@@ -10,6 +10,7 @@ import TextFade from "./components/TextFade";
 import { LogoCloud } from "./components/LogoCloud";
 import ButtonSection from "./components/ButtonSection";
 import Projects from "./components/Projects";
+import Cover from "./components/Cover";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <RevealText />
         <Projects />
+        <Cover />
         {/* <DotBg /> */}
         {/* <TextFade /> */}
         <InfiniteSlider />
