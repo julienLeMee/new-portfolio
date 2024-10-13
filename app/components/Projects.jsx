@@ -11,6 +11,7 @@ export default function Projects() {
         { name: "Ruby on rails", logo: "/logos/rails.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+        { name: "Google Map API", logo: "/logos/google-map.svg" },
       ],
       link: "https://link-to-project-one.com",
     },
@@ -59,15 +60,15 @@ export default function Projects() {
       link: "https://link-to-project-one.com",
     },
     {
-      imageSrc: "/projects/disney.jpeg",
-      title: "Disney Clone",
+      imageSrc: "/projects/la-ferme-de-novelle.jpeg",
+      title: "La ferme de Novelle",
       description: "Description of project one.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
+        { name: "MapBox API", logo: "/logos/mapbox.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
     },
     {
       imageSrc: "/projects/disney.jpeg",
