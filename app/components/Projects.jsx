@@ -5,7 +5,8 @@ export default function Projects() {
     {
       imageSrc: "/projects/yum-list.jpeg",
       title: "Yum list",
-      description: "Progressive Web App. Organize your favorite restaurants, whether they are tested or to discover. Connect with your friends and share your favorite addresses.",
+      description:
+        "Progressive Web App. Organize your favorite restaurants, whether they are tested or to discover. Connect with your friends and share your favorite addresses.",
       technologies: [
         { name: "Ruby on rails", logo: "/logos/rails.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -14,8 +15,8 @@ export default function Projects() {
       link: "https://link-to-project-one.com",
     },
     {
-      imageSrc: "/projects/disney.jpeg",
-      title: "Disney Clone",
+      imageSrc: "/projects/tesla.png",
+      title: "Tesla Clone",
       description: "Description of project one.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
@@ -36,8 +37,8 @@ export default function Projects() {
       link: "https://link-to-project-one.com",
     },
     {
-      imageSrc: "/projects/tesla.png",
-      title: "Tesla Clone",
+      imageSrc: "/projects/disney.jpeg",
+      title: "Disney Clone",
       description: "Description of project one.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
