@@ -16,13 +16,13 @@ export default function Hero() {
             <br />
             web developer
             </h1>
-            <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-rose]">
-                <p className="text-2xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-rose] py-5 md:border-y-0 md:border-r md:py-8 w-full">
+            <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-pink]">
+                <p className="text-2xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
                 I learn and improve every day to take on new challenges.
                 </p>
                 <div className="flex w-full flex-row items-center justify-stretch gap-x-2 py-5 md:w-auto md:pl-10 md:pr-8">
-                    <button className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 bg-[--color-rose] text-black md:hover:bg-white text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-full md:w-auto">first button</button>
-                    <button className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-[--color-rose] bg-transparent backdrop-blur-[10px] md:hover:bg-[--color-rose] md:hover:text-black text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-full md:w-auto">second button</button>
+                    <button className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 bg-[--color-pink] text-black md:hover:bg-white text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-full md:w-auto">first button</button>
+                    <button className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-[--color-pink] bg-transparent backdrop-blur-[10px] md:hover:bg-[--color-pink] md:hover:text-black text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-full md:w-auto">second button</button>
                 </div>
             </div>
 
