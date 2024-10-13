@@ -9,6 +9,7 @@ import RevealBox from "./components/RevealBox";
 import RevealText from "./components/RevealText";
 import TextFade from "./components/TextFade";
 import { LogoCloud } from "./components/LogoCloud";
+import ButtonSection from "./components/ButtonSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <MagicalCard />
         <TextFade />
         <InfiniteSlider />
+        <ButtonSection />
         <div className="container mx-auto p-4">
           <Collapsible />
         </div>
