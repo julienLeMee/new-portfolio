@@ -81,17 +81,6 @@ export default function Projects() {
       ],
       link: "https://link-to-project-one.com",
     },
-    {
-      imageSrc: "/projects/disney.jpeg",
-      title: "Disney Clone",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
   ];
 
   return (

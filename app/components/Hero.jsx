@@ -21,8 +21,8 @@ export default function Hero() {
                     </p>
                 </div>
                 <div className="flex w-full flex-row items-center justify-stretch gap-x-2 py-5 md:w-auto md:pl-10 md:pr-8">
-                    <button className="relative w-max inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 bg-[--color-pink] text-black md:hover:bg-white text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30">first button</button>
-                    <button className="relative w-max inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-[--color-pink] bg-transparent backdrop-blur-[10px] md:hover:bg-[--color-pink] md:hover:text-black text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30">second button</button>
+                    <button className="relative w-max inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 bg-[--color-pink] text-black md:hover:bg-white text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30">Github</button>
+                    <button className="relative w-max inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-[--color-pink] bg-transparent backdrop-blur-[10px] md:hover:bg-[--color-pink] md:hover:text-black text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30">Linkedin</button>
                 </div>
             </div>
       </div>
