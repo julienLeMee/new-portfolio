@@ -45,7 +45,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex w-full justify-center overflow-hidden border-b border-solid border-transparent px-3 transition-all duration-500 md:items-center md:pt-0 md:overflow-auto md:px-10 md:transition-none md:h-auto md:text-[--color-pink]">
+    <header className="flex w-full justify-center border-b border-solid border-transparent px-3 transition-all duration-500 md:items-center md:pt-0 md:px-10 md:transition-none md:h-auto md:text-[--color-pink]">
       <div className="w-full max-w-[1920px] mx-auto py-4 flex justify-between items-center">
         <p className="text-base font-bold leading-[1.1] flex gap-2 items-center">
           <Image
