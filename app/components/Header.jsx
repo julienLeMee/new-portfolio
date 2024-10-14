@@ -20,8 +20,8 @@ export default function Header() {
     document.documentElement.classList.toggle("dark", isDarkMode);
   }, []);
 
-   // Désactiver ou réactiver le scroll en fonction de l'état du menu mobile
-   useEffect(() => {
+  // Désactiver ou réactiver le scroll en fonction de l'état du menu mobile
+  useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden"; // Désactiver le scroll
     } else {
@@ -47,16 +47,13 @@ export default function Header() {
   return (
     <header className="flex w-full justify-center border-b border-solid border-transparent px-3 transition-all duration-500 md:items-center md:pt-0 md:px-10 md:transition-none md:h-auto md:text-[--color-pink]">
       <div className="w-full max-w-[1920px] mx-auto py-4 flex justify-between items-center">
-        <p className="text-base font-bold leading-[1.1] flex gap-2 items-center">
-          <Image
-            src="/logos/jl.svg"
-            alt="Logo"
-            width={32}
-            height={32}
-            // className="rotate"
-          />
+        <Link
+          href="/"
+          className="text-base font-bold leading-[1.1] flex gap-2 items-center"
+        >
+          <Image src="/logos/jl.svg" alt="Logo" width={32} height={32} />
           Julien Le Mee
-        </p>
+        </Link>
 
         {/* Menu pour desktop */}
         <div className="hidden md:flex space-x-6">
@@ -120,9 +117,7 @@ export default function Header() {
 
             <nav className="flex w-full flex-1 flex-col justify-end gap-y-[8%] pointer-events-auto opacity-100 mb-6">
               <div className="flex w-full flex-col transition-transform duration-500 translate-x-0">
-                <p className="pb-1 font-mono text-[10px] uppercase">
-                  [Menu]
-                </p>
+                <p className="pb-1 font-mono text-[10px] uppercase">[Menu]</p>
                 <a
                   href="#"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"

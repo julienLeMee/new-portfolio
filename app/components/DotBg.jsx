@@ -7,7 +7,7 @@ export default function DotBg() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white">
-        Dot Pattern
+        Projects
       </p>
       <DotPattern
         className={cn(
