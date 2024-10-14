@@ -10,25 +10,25 @@ import TextFade from "./components/TextFade";
 import { LogoCloud } from "./components/LogoCloud";
 import ButtonSection from "./components/ButtonSection";
 import Projects from "./components/Projects";
-import Cover from "./components/Cover";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
-      <main className="h-full min-h-screen bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
+      <main className="bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
         <Header />
         {/* <RevealBox /> */}
         <Hero />
         <RevealText />
         <Projects />
-        <Cover />
+        <Footer />
         {/* <DotBg /> */}
         {/* <TextFade /> */}
-        <InfiniteSlider />
+        {/* <InfiniteSlider />
         <ButtonSection />
         <div className="container mx-auto p-4">
           <Collapsible />
-        </div>
+        </div> */}
         {/* <LogoCloud /> */}
       </main>
     </>
