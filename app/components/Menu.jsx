@@ -63,8 +63,13 @@ export default function Menu() {
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href={hoveredItem.href}
+                    style={{
+                      backgroundImage: hoveredItem.backgroundImage,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium">
+                    <div className="mb-2 mt-4 text-lg font-medium leading-[1.1]">
                       {hoveredItem.title}
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
@@ -80,9 +85,10 @@ export default function Menu() {
                 onMouseEnter={() =>
                   setHoveredItem({
                     title: "Full stack web developer",
-                    description:
-                      "PHP | Wordpress | Full stack web developer.",
+                    description: "PHP | Wordpress | Javascript",
                     href: "/docs",
+                    backgroundImage:
+                      "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(255, 189, 122, 0), rgba(255, 189, 122, 1))",
                   })
                 }
               >
@@ -97,6 +103,8 @@ export default function Menu() {
                     description:
                       "How to install dependencies and structure your app.",
                     href: "/docs/installation",
+                    backgroundImage:
+                      "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(227, 175, 190, 0), rgba(227, 175, 190, 1))",
                   })
                 }
               >
@@ -110,6 +118,8 @@ export default function Menu() {
                     title: "Typography",
                     description: "Styles for headings, paragraphs, lists...etc",
                     href: "/docs/primitives/typography",
+                    backgroundImage:
+                      "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(95, 154, 65, 0), rgba(95, 154, 65, 1))",
                   })
                 }
               >
