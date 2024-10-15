@@ -119,7 +119,7 @@ export default function Header() {
               <div className="flex w-full flex-col transition-transform duration-500 translate-x-0">
                 <p className="pb-1 font-mono text-[10px] uppercase">[Menu]</p>
                 <a
-                  href="#"
+                  href="#1"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
                   Menu 1
@@ -142,7 +142,7 @@ export default function Header() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="#2"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
                   Menu 2
@@ -165,7 +165,7 @@ export default function Header() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="#3"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
                   Menu 3
@@ -193,13 +193,13 @@ export default function Header() {
                   [Socials]
                 </p>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/julien-le-mee/"
                   className="border-b border-solid border-b-black text-left py-2 text-2xl leading-[1.1] sm:py-4 transition-transform duration-500 translate-x-0"
                 >
                   Linkedin
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/julienLeMee"
                   className="border-b border-solid border-b-black text-left py-2 text-2xl leading-[1.1] sm:py-4 transition-transform duration-500 translate-x-0"
                 >
                   Github

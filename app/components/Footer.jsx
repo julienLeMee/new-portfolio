@@ -16,11 +16,17 @@ export default function Footer() {
               I learn and improve every day to take on new challenges.
             </p>
             <div className="flex flex-row items-center justify-stretch gap-x-2 py-4 md:w-3/5 md:justify-end md:py-0 md:pl-6 lg:w-auto">
-              <button className="group relative inline-flex h-[44px] w-1/2 items-center justify-center rounded-lg bg-black px-2 font-mono text-[15px] font-medium uppercase text-white transition-all duration-200 sm:px-6 md:hover:bg-white md:hover:text-black lg:w-auto">
-                Github
-              </button>
               <a
-                href="#"
+                href="https://github.com/julienLeMee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="group relative inline-flex h-[44px] w-1/2 items-center justify-center rounded-lg bg-black px-2 font-mono text-[15px] font-medium uppercase text-white transition-all duration-200 sm:px-6 md:hover:bg-white md:hover:text-black lg:w-auto">
+                  Github
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/julien-le-mee/"
                 className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-black bg-transparent text-black backdrop-blur-[10px] md:hover:bg-black md:hover:text-white text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-1/2 lg:w-auto"
               >
                 Linkedin
