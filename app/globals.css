@@ -16,7 +16,7 @@ body {
 @layer base {
   :root {
     --color-dark-bg: #181818;
-    --color-dark-text: #181818;
+    --color-dark-text : #181818;
     --color-orange: #ffbd7a;
     --color-pink: #E3AFBE;
 
@@ -103,6 +103,11 @@ body {
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari et Opera */
+  }
+
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: var(--color-pink)!important;
   }
 
   input::placeholder,

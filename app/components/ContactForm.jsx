@@ -48,7 +48,7 @@ export function ContactForm() {
         <p className="min-w-full pb-1 font-mono text-[13px] uppercase">
           [003. Let's get in touch]
         </p>
-        <h1 className="mt-5 break-words text-[30px] font-bold uppercase leading-[0.8] text-white sm:text-[40px] md:mt-8 md:text-5xl 2xl:text-7xl">
+        <h1 className="mt-5 break-words text-[30px] font-bold uppercase leading-[0.8] dark:text-white text-[--color-dark-text] sm:text-[40px] md:mt-8 md:text-5xl 2xl:text-7xl">
           Contact me if you would like us to work{" "}
           <span className="text-[--color-pink]">together.</span>
         </h1>

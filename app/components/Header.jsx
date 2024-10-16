@@ -49,7 +49,7 @@ export default function Header() {
       <div className="w-full max-w-[1920px] mx-auto py-4 flex justify-between items-center">
         <Link
           href="/"
-          className="text-base font-bold leading-[1.1] flex gap-2 items-center"
+          className="text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
         >
           <Image src="/logos/jl.svg" alt="Logo" width={32} height={32} />
           Julien Le Mee

@@ -1,4 +1,4 @@
-import DotBg from "../components/DotBg";
+import AsideProjects from "../components/AsideProjects";
 import Header from "../components/Header";
 
 export default function Projects() {
@@ -6,7 +6,7 @@ export default function Projects() {
     <>
       <main className="bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
         <Header />
-        <DotBg />
+        <AsideProjects />
       </main>
     </>
   );

@@ -18,25 +18,25 @@ import {
 const components = [
   {
     title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    href: "/projects",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    href: "/projects",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
     title: "Progress",
-    href: "/docs/primitives/progress",
+    href: "/projects",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
+    href: "/projects",
     description: "Visually or semantically separates content.",
   },
 ];
@@ -81,49 +81,48 @@ export default function Menu() {
               {/* Liste des items qui met à jour l'élément survolé */}
               <ListItem
                 href="/docs"
-                title="Introduction"
+                title="Full stack web developer"
                 onMouseEnter={() =>
                   setHoveredItem({
                     title: "Full stack web developer",
-                    description: "PHP | Wordpress | Javascript",
-                    href: "/docs",
+                    description: "PHP | Wordpress | JS",
+                    href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(255, 189, 122, 0), rgba(255, 189, 122, 1))",
                   })
                 }
               >
-                Re-usable components built using Radix UI and Tailwind CSS.
+                WordPress websites | Debugging | Analysis | customization | Project management
               </ListItem>
               <ListItem
                 href="/docs/installation"
-                title="Installation"
+                title="Freelance"
                 onMouseEnter={() =>
                   setHoveredItem({
-                    title: "Installation",
-                    description:
-                      "How to install dependencies and structure your app.",
-                    href: "/docs/installation",
+                    title: "Freelance",
+                    description: "Next JS | Tailwind | JS",
+                    href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(227, 175, 190, 0), rgba(227, 175, 190, 1))",
                   })
                 }
               >
-                How to install dependencies and structure your app.
+                Created responsive showcase websites.
               </ListItem>
               <ListItem
-                href="/docs/primitives/typography"
-                title="Typography"
+                href="/projects"
+                title="Teacher assistant"
                 onMouseEnter={() =>
                   setHoveredItem({
-                    title: "Typography",
-                    description: "Styles for headings, paragraphs, lists...etc",
-                    href: "/docs/primitives/typography",
+                    title: "Teacher assistant (Le Wagon)",
+                    description: "Ruby on rails | CSS | JS",
+                    href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(95, 154, 65, 0), rgba(95, 154, 65, 1))",
                   })
                 }
               >
-                Styles for headings, paragraphs, lists...etc
+                Assisted students | Debugging | Pair programming | Support
               </ListItem>
             </ul>
           </NavigationMenuContent>
