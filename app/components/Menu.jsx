@@ -44,9 +44,9 @@ const components = [
 export default function Menu() {
   // État pour stocker l'élément actuellement survolé
   const [hoveredItem, setHoveredItem] = React.useState({
-    title: "shadcn/ui",
+    title: "My experiences",
     description:
-      "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+      "This is a list of of my latest experiences.",
     href: "/",
   });
 

@@ -11,26 +11,29 @@ import { LogoCloud } from "./components/LogoCloud";
 import ButtonSection from "./components/ButtonSection";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ThreeJSComponent from "./components/ThreeJSComponent";
+import { ContactForm } from "./components/ContactForm";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <main className="bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
-        <Header />
         {/* <RevealBox /> */}
         <Hero />
         <RevealText />
         <Projects />
-        <Footer />
+        <ContactForm />
         {/* <DotBg /> */}
         {/* <TextFade /> */}
         {/* <InfiniteSlider />
         <ButtonSection />
         <div className="container mx-auto p-4">
-          <Collapsible />
+        <Collapsible />
         </div> */}
         {/* <LogoCloud /> */}
       </main>
+      <Footer />
     </>
   );
 }
