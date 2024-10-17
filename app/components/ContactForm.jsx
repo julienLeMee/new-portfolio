@@ -1,8 +1,10 @@
 "use client";
 
+import React, { useRef } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -41,6 +43,8 @@ export function ContactForm() {
     console.log(data); // Gérer la soumission ici
     // Envoi du courriel ou traitement des données
   };
+
+  const recaptchaRef = React.useRef();
 
   return (
     <>
@@ -99,6 +103,16 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
+
+            {/* Ajout du reCAPTCHA */}
+            {/* <div className="my-4">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey="YOUR_SITE_KEY" // Remplacez par votre clé de site reCAPTCHA
+                onChange={(value) => form.setValue("recaptcha", value)} // Enregistre la valeur du CAPTCHA
+              />
+              <FormMessage name="recaptcha" />
+            </div> */}
 
             <Button className="w-fit" type="submit">
               Submit
