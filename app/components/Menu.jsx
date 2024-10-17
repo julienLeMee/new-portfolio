@@ -28,17 +28,6 @@ const components = [
     description:
       "For sighted users to preview content available behind a link.",
   },
-  {
-    title: "Progress",
-    href: "/projects",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/projects",
-    description: "Visually or semantically separates content.",
-  },
 ];
 
 export default function Menu() {
@@ -92,7 +81,7 @@ export default function Menu() {
                   })
                 }
               >
-                WordPress websites | Debugging | Analysis | customization | Project management
+                WordPress websites | Debugging | Analysis | Customization | Training
               </ListItem>
               <ListItem
                 href="/docs/installation"

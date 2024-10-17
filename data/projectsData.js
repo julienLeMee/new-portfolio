@@ -12,6 +12,7 @@ const projects = [
         { name: "Google Map API", logo: "/logos/google-map.svg" },
       ],
       link: "https://link-to-project-one.com",
+      github: "https://github.com/julienLeMee/yum-list",
     },
     // TESLA CLONE
     {
@@ -24,6 +25,7 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       link: "https://link-to-project-one.com",
+      github: "https://github.com/julienLeMee/yum-list",
     },
     // NIKE CLONE
     {
@@ -36,6 +38,7 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       link: "https://link-to-project-one.com",
+      github: "https://github.com/julienLeMee/yum-list",
     },
     // DISNEY CLONE
     {
@@ -48,6 +51,7 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       link: "https://link-to-project-one.com",
+      github: "https://github.com/julienLeMee/yum-list",
     },
     // STAR WARS EMPIRE BASE
     {
@@ -60,6 +64,7 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       link: "https://link-to-project-one.com",
+      github: "https://github.com/julienLeMee/yum-list",
     },
     // LA FERME DE NOVELLE
     {
@@ -72,6 +77,7 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
+      github: "https://github.com/julienLeMee/yum-list",
     },
   ];
 

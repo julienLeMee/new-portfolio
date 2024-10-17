@@ -119,7 +119,7 @@ export default function Header() {
               <div className="flex w-full flex-col transition-transform duration-500 translate-x-0">
                 <p className="pb-1 font-mono text-[10px] uppercase">[Menu]</p>
                 <a
-                  href="#selected-projects"
+                  href="/#selected-projects"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
                   Selected projects
@@ -142,10 +142,10 @@ export default function Header() {
                   </svg>
                 </a>
                 <a
-                  href="#2"
+                  href="/projects"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
-                  Menu 2
+                  Projects details
                   <svg
                     width="24px"
                     height="24px"
@@ -165,10 +165,10 @@ export default function Header() {
                   </svg>
                 </a>
                 <a
-                  href="#3"
+                  href="/#lets-get-in-touch"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
-                  Menu 3
+                  Let's get in touch
                   <svg
                     width="24px"
                     height="24px"

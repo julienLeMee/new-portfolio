@@ -4,7 +4,7 @@ import projects from "@/data/projectsData";
 export default function Projects() {
   return (
     <>
-      <div id="" className="my-32 px-3 md:px-6 lg:px-10 flex flex-col">
+      <div id="selected-projects" className="my-32 px-3 md:px-6 lg:px-10 flex flex-col">
         <div className="w-full pb-16">
           <p className="max-w-[1920px] min-w-full pb-1 font-mono text-[13px] uppercase">
             [002. Selected Works]
