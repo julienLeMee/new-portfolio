@@ -1,80 +1,10 @@
 import ProjectCard from "./ProjectCard";
+import projects from "@/data/projectsData";
 
 export default function Projects() {
-  const projects = [
-    {
-      imageSrc: "/projects/yum-list.jpeg",
-      title: "Yum list",
-      description:
-        "Progressive Web App. Organize your favorite restaurants, whether they are tested or to discover. Connect with your friends and share your favorite addresses.",
-      technologies: [
-        { name: "Ruby on rails", logo: "/logos/rails.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-        { name: "Google Map API", logo: "/logos/google-map.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
-    {
-      imageSrc: "/projects/tesla.png",
-      title: "Tesla Clone",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
-    {
-      imageSrc: "/projects/nike.jpg",
-      title: "Nike Clone",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
-    {
-      imageSrc: "/projects/disney.jpeg",
-      title: "Disney Clone",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
-    {
-      imageSrc: "/projects/star-wars-empire-base.png",
-      title: "Star wars Imperial Base",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Three JS", logo: "/logos/threejs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
-    {
-      imageSrc: "/projects/la-ferme-de-novelle.jpeg",
-      title: "La ferme de Novelle",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "MapBox API", logo: "/logos/mapbox.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
-    },
-  ];
-
   return (
     <>
-      <div className="my-32 px-3 md:px-6 lg:px-10 flex flex-col">
+      <div id="" className="my-32 px-3 md:px-6 lg:px-10 flex flex-col">
         <div className="w-full pb-16">
           <p className="max-w-[1920px] min-w-full pb-1 font-mono text-[13px] uppercase">
             [002. Selected Works]

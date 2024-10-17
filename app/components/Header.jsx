@@ -119,10 +119,10 @@ export default function Header() {
               <div className="flex w-full flex-col transition-transform duration-500 translate-x-0">
                 <p className="pb-1 font-mono text-[10px] uppercase">[Menu]</p>
                 <a
-                  href="#1"
+                  href="#selected-projects"
                   className="border-b border-solid border-b-black text-left flex items-end justify-between gap-x-2 py-2 text-3xl font-bold uppercase leading-[0.8] sm:py-4 sm:text-[40px] transition-transform duration-500 translate-x-0"
                 >
-                  Menu 1
+                  Selected projects
                   <svg
                     width="24px"
                     height="24px"
