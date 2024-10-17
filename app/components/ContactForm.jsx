@@ -44,7 +44,7 @@ export function ContactForm() {
 
   return (
     <>
-      <div className="max-w-[850px] p-3 md:p-6 lg:p-10 flex flex-col">
+      <div className="max-w-screen-sm p-3 md:p-6 lg:p-10 flex flex-col text-center mx-auto">
         <p className="min-w-full pb-1 font-mono text-[13px] uppercase">
           [003. Let's get in touch]
         </p>

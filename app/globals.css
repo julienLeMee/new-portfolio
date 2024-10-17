@@ -108,11 +108,13 @@ body {
   .dark input::placeholder,
   .dark textarea::placeholder {
     color: var(--color-pink)!important;
+    font-size: 13px!important;
   }
 
   input::placeholder,
   textarea::placeholder {
     color: var(--color-pink)!important;
+    font-size: 13px!important;
   }
 
   textarea {

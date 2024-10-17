@@ -70,17 +70,6 @@ export default function Projects() {
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
     },
-    {
-      imageSrc: "/projects/disney.jpeg",
-      title: "Disney Clone",
-      description: "Description of project one.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      link: "https://link-to-project-one.com",
-    },
   ];
 
   return (
