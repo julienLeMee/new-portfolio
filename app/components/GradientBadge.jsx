@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AnimatedGradientText from "@/components/ui/animated-gradient-text";
 
-export async function GradienBadge() {
+export function GradienBadge() {
   return (
     <div className="z-10 my-8 flex items-center justify-center">
       <AnimatedGradientText>

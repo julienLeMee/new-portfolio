@@ -17,23 +17,26 @@ import { ContactForm } from "./components/ContactForm";
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
-        {/* <RevealBox /> */}
-        <Hero />
-        <RevealText />
-        <Projects />
-        <ContactForm />
-        {/* <DotBg /> */}
-        {/* <TextFade /> */}
-        {/* <InfiniteSlider />
+      {/* <div style={{ position: "relative", overflow: "hidden" }}> */}
+        <Header />
+        {/* <ThreeJSComponent /> */}
+        <main className="bg-white dark:bg-background text-[--color-dark-bg] dark:text-[--color-pink]">
+          {/* <RevealBox /> */}
+          <Hero />
+          <RevealText />
+          <Projects />
+          <ContactForm />
+          {/* <DotBg /> */}
+          {/* <TextFade /> */}
+          {/* <InfiniteSlider />
         <ButtonSection />
         <div className="container mx-auto p-4">
         <Collapsible />
         </div> */}
-        {/* <LogoCloud /> */}
-      </main>
-      <Footer />
+          {/* <LogoCloud /> */}
+        </main>
+        <Footer />
+      {/* </div> */}
     </>
   );
 }
