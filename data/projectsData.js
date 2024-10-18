@@ -11,6 +11,11 @@ const projects = [
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
         { name: "Google Map API", logo: "/logos/google-map.svg" },
       ],
+      keyFeatures: [
+        { text: "PWA for seamless mobile experience", icon: "/icons/mobile-icon.svg" },
+        { text: "Integration with Google Maps for restaurant locations", icon: "/icons/mobile-icon.svg" },
+        { text: "Social sharing features for favorite spots", icon: "/icons/mobile-icon.svg" },
+      ],
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
     },
@@ -18,11 +23,16 @@ const projects = [
     {
       imageSrc: "/projects/tesla.png",
       title: "Tesla Clone",
-      description: "Description of project one.",
+      description: "A clone of Tesla's website with dynamic interactions.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        { text: "Smooth animations for a polished user experience", icon: "/icons/animations.svg" },
+        { text: "Dynamic content loading with Next.js", icon: "/icons/dynamic-content.svg" },
+        { text: "Responsive design optimized for all devices", icon: "/icons/responsive.svg" },
       ],
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
@@ -31,11 +41,16 @@ const projects = [
     {
       imageSrc: "/projects/nike.jpg",
       title: "Nike Clone",
-      description: "Description of project one.",
+      description: "A responsive clone of Nike's e-commerce platform.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        { text: "Product filtering and dynamic cart functionality", icon: "/icons/filtering.svg" },
+        { text: "Fully responsive across all devices", icon: "/icons/responsive.svg" },
+        { text: "Optimized for fast load times", icon: "/icons/fast-load.svg" },
       ],
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
@@ -44,11 +59,16 @@ const projects = [
     {
       imageSrc: "/projects/disney.jpeg",
       title: "Disney Clone",
-      description: "Description of project one.",
+      description: "A clone of Disney's streaming service interface.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        { text: "Interactive UI with smooth transitions", icon: "/icons/ui.svg" },
+        { text: "Streaming content simulation with API integration", icon: "/icons/api.svg" },
+        { text: "User authentication and secure session handling", icon: "/icons/authentication.svg" },
       ],
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
@@ -57,11 +77,16 @@ const projects = [
     {
       imageSrc: "/projects/star-wars-empire-base.png",
       title: "Star wars Imperial Base",
-      description: "Description of project one.",
+      description: "A 3D interactive experience inspired by Star Wars.",
       technologies: [
         { name: "Three JS", logo: "/logos/threejs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        { text: "3D models and animations powered by Three.js", icon: "/icons/3d-models.svg" },
+        { text: "Immersive user experience with WebGL", icon: "/icons/webgl.svg" },
+        { text: "Real-time interactions and dynamic environment", icon: "/icons/real-time.svg" },
       ],
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
@@ -70,11 +95,16 @@ const projects = [
     {
       imageSrc: "/projects/la-ferme-de-novelle.jpeg",
       title: "La ferme de Novelle",
-      description: "Description of project one.",
+      description: "A website for a local farm featuring a map and store.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "MapBox API", logo: "/logos/mapbox.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        { text: "Interactive map powered by MapBox", icon: "/icons/mapbox.svg" },
+        { text: "E-commerce integration for online store", icon: "/icons/ecommerce.svg" },
+        { text: "Fast, server-side rendering with Next.js", icon: "/icons/server-side-rendering.svg" },
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",

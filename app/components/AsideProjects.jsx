@@ -13,12 +13,12 @@ const AsideProjects = () => {
   };
 
   return (
-    <aside className="flex sm:flex-row flex-col h-[calc(100vh-78px)] w-full text-white">
+    <aside className="h-full flex sm:flex-row flex-col w-full text-white">
       {/* Colonne des onglets */}
       <div className="flex sm:flex-col flex-row flex-wrap sm:py-16 py-4 pl-10 sm:pr-0 pr-10 gap-2 sm:w-1/5 w-full bg-transparent">
         {projects.map((project, index) => (
           <button
-            key={index}
+            key={project.id || project.title}
             onClick={() => handleTabClick(`tab${index + 1}`)}
             className={`w-fit text-start leading-tight relative inline-flex items-center justify-center rounded-lg px-3 py-1.5 text-sm hover:bg-[white] hover:text-[#181818]  ${
               activeTab === `tab${index + 1}`
@@ -37,11 +37,12 @@ const AsideProjects = () => {
           if (activeTab === `tab${index + 1}`) {
             return (
               <SingleProject
-                key={index}
+                key={project.id || project.title}
                 title={project.title}
                 description={project.description}
                 imageSrc={project.imageSrc}
                 technologies={project.technologies}
+                keyFeatures={project.keyFeatures}
                 link={project.link}
               />
             );
@@ -54,16 +55,18 @@ const AsideProjects = () => {
         {projects.map((project, index) => {
           if (activeTab === `tab${index + 1}`) {
             return (
-              <div className="flex flex-col gap-2">
+              <div
+                className="flex flex-col gap-2"
+                key={project.id || project.title}
+              >
                 <Link
-                  key={index}
                   href={project.github}
                   className="flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
                 >
                   <svg
                     width="16px"
                     height="16px"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,16 +75,16 @@ const AsideProjects = () => {
                     <path
                       d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                   View on Github
@@ -95,7 +98,7 @@ const AsideProjects = () => {
                     width="16px"
                     height="16px"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     color="currentColor"
@@ -103,9 +106,9 @@ const AsideProjects = () => {
                     <path
                       d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                   View Project

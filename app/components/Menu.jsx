@@ -17,16 +17,16 @@ import {
 // Déclaration sans typage explicite
 const components = [
   {
-    title: "Alert Dialog",
-    href: "/projects",
+    title: "Selected projects",
+    href: "/#selected-projects",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Explore a selection of key projects, showcasing major achievements.",
   },
   {
-    title: "Hover Card",
+    title: "Projects details",
     href: "/projects",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Browse through all my projects, with insights into the technologies used.",
   },
 ];
 

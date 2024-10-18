@@ -4,7 +4,11 @@
 
 body {
   /* font-family: Geist, Helvetica, sans-serif; */
-  font-family: 'PP Neue Montreal', sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -16,9 +20,9 @@ body {
 @layer base {
   :root {
     --color-dark-bg: #181818;
-    --color-dark-text : #181818;
+    --color-dark-text: #181818;
     --color-orange: #ffbd7a;
-    --color-pink: #E3AFBE;
+    --color-pink: #e3afbe;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -107,17 +111,17 @@ body {
 
   .dark input::placeholder,
   .dark textarea::placeholder {
-    color: var(--color-pink)!important;
-    font-size: 13px!important;
+    color: var(--color-pink) !important;
+    font-size: 13px !important;
   }
 
   input::placeholder,
   textarea::placeholder {
-    color: var(--color-pink)!important;
-    font-size: 13px!important;
+    color: var(--color-pink) !important;
+    font-size: 13px !important;
   }
 
   textarea {
-    background-color: transparent
-  };
+    background-color: transparent;
+  }
 }

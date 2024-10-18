@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 
-export async function ShinyBadge({ logo, text = "✨ Badge" }) {
+export function ShinyBadge({ logo, text = "✨ Badge" }) {
   return (
     <div className="z-10 flex items-center justify-center">
       <div
