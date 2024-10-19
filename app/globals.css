@@ -124,4 +124,9 @@ html {
   textarea {
     background-color: transparent;
   }
+
+  .custom-rotate {
+    transform: rotateZ(-90deg);
+    transform-origin: center left;
+  }
 }
