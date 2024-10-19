@@ -21,9 +21,9 @@ const projects = [
     },
     // TESLA CLONE
     {
-      imageSrc: "/projects/tesla.png",
+      imageSrc: "/projects/tesla.jpeg",
       title: "Tesla Clone",
-      description: "A clone of Tesla's website with dynamic interactions.",
+      description: "A clone of Tesla's beautiful website.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },

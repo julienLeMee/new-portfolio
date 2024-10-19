@@ -31,11 +31,38 @@ export default function Projects() {
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
     },
-    // NIKE CLONE
+    // LA FERME DE NOVELLE
     {
-      imageSrc: "/projects/nike.jpg",
-      title: "Nike Clone",
-      description: "A responsive clone of Nike's e-commerce platform.",
+      imageSrc: "/projects/la-ferme-de-novelle.jpeg",
+      title: "La ferme de Novelle",
+      description: "A website for a local farm featuring a map and store.",
+      technologies: [
+        { name: "Next JS", logo: "/logos/nextjs.svg" },
+        { name: "MapBox API", logo: "/logos/mapbox.svg" },
+        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+      ],
+      keyFeatures: [
+        {
+          text: "Interactive map powered by MapBox",
+          icon: "/icons/mapbox.svg",
+        },
+        {
+          text: "E-commerce integration for online store",
+          icon: "/icons/ecommerce.svg",
+        },
+        {
+          text: "Fast, server-side rendering with Next.js",
+          icon: "/icons/server-side-rendering.svg",
+        },
+      ],
+      link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
+      github: "https://github.com/julienLeMee/yum-list",
+    },
+    // TESLA CLONE
+    {
+      imageSrc: "/projects/tesla.jpeg",
+      title: "Tesla Clone",
+      description: "A responsive clone of Tesla's beautiful website.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -82,40 +109,10 @@ export default function Projects() {
       link: "https://link-to-project-one.com",
       github: "https://github.com/julienLeMee/yum-list",
     },
-    // LA FERME DE NOVELLE
-    {
-      imageSrc: "/projects/la-ferme-de-novelle.jpeg",
-      title: "La ferme de Novelle",
-      description: "A website for a local farm featuring a map and store.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "MapBox API", logo: "/logos/mapbox.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      keyFeatures: [
-        {
-          text: "Interactive map powered by MapBox",
-          icon: "/icons/mapbox.svg",
-        },
-        {
-          text: "E-commerce integration for online store",
-          icon: "/icons/ecommerce.svg",
-        },
-        {
-          text: "Fast, server-side rendering with Next.js",
-          icon: "/icons/server-side-rendering.svg",
-        },
-      ],
-      link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
-      github: "https://github.com/julienLeMee/yum-list",
-    },
   ];
 
   return (
-    <div
-      id="selected-projects"
-      className="my-32 flex flex-col"
-    >
+    <div id="selected-projects" className="my-32 flex flex-col">
       <div className="w-full px-3 md:px-6 lg:px-10 pb-16">
         <p className="max-w-[1920px] min-w-full pb-1 font-mono text-[13px] uppercase">
           [002. Selected Works]
