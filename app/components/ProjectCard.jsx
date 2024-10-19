@@ -20,7 +20,7 @@ export default function ProjectCard({
       }}
     >
       <div className="relative mb-4 h-full w-full overflow-hidden"></div>
-      <h3 className="mb-6 text-2xl leading-[1.1] md:text-[32px] text-white z-10 transition-all duration-500 ease-in-out custom-rotate uppercase text-[clamp(3rem,5vw,4.5rem)] font-extrabold absolute bottom-0 left-[50px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+      <h3 className="w-max mb-6 text-2xl leading-[1.1] md:text-[32px] text-white z-10 transition-all duration-500 ease-in-out custom-rotate uppercase text-[clamp(3rem,5vw,4.5rem)] font-extrabold absolute bottom-0 left-[50px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
         {title}
       </h3>
       <div className="absolute w-3/4 bottom-0 right-0 p-8 text-right text-base opacity-0 transition-opacity duration-300 delay-200 group-hover:opacity-100">
