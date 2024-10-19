@@ -89,7 +89,7 @@ export default function Projects() {
       description: "A clone of Disney's streaming service interface.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
+        { name: "The Movie DB API", logo: "/logos/the-movie-db.svg" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       keyFeatures: [
