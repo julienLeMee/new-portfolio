@@ -104,7 +104,7 @@ export default function Menu() {
                 onMouseEnter={() =>
                   setHoveredItem({
                     title: "Teacher assistant (Le Wagon)",
-                    description: "Ruby on rails | CSS | JS",
+                    description: "Ruby on rails | JS",
                     href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(95, 154, 65, 0), rgba(95, 154, 65, 1))",
@@ -119,7 +119,7 @@ export default function Menu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:grid-cols-1">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -132,13 +132,13 @@ export default function Menu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Extra
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );

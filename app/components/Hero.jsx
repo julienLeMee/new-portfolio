@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { heroAnimation } from "../../animations/heroAnimation";
-import Loader from "./Loader"; // Importer le loader
-import gsap from "gsap";
+import Loader from "./Loader";
 
 export default function Hero() {
   const [loading, setLoading] = useState(true); // État pour le chargement
@@ -12,7 +11,7 @@ export default function Hero() {
     // Simule le chargement de la page
     const timeout = setTimeout(() => {
       setLoading(false); // Désactiver le loader après 3 secondes
-    }, 3000); // Temps de chargement simulé (3s)
+    }, 500);
 
     return () => clearTimeout(timeout); // Nettoyage
   }, []);

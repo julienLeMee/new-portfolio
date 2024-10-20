@@ -1,3 +1,4 @@
+import { GradienBadge } from "./GradientBadge";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -43,16 +44,16 @@ export default function Projects() {
       ],
       keyFeatures: [
         {
-          text: "Interactive map powered by MapBox",
-          icon: "/icons/mapbox.svg",
+          text: "Responsive and interactive UI design",
+          icon: "/icons/mobile-icon.svg",
         },
         {
-          text: "E-commerce integration for online store",
-          icon: "/icons/ecommerce.svg",
+          text: "Dynamic content loading and routing with Next.js",
+          icon: "/icons/speed-icon.svg",
         },
         {
-          text: "Fast, server-side rendering with Next.js",
-          icon: "/icons/server-side-rendering.svg",
+          text: "Interactive map integration using MapBox",
+          icon: "/icons/pin-icon.svg",
         },
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
@@ -70,14 +71,13 @@ export default function Projects() {
       ],
       keyFeatures: [
         {
-          text: "Product filtering and dynamic cart functionality",
-          icon: "/icons/filtering.svg",
+          text: "Dynamic content loading and routing with Next.js",
+          icon: "/icons/speed-icon.svg",
         },
         {
-          text: "Fully responsive across all devices",
-          icon: "/icons/responsive.svg",
+          text: "Optimized for cross-device responsive design",
+          icon: "/icons/imac-icon.svg",
         },
-        { text: "Optimized for fast load times", icon: "/icons/fast-load.svg" },
       ],
       link: "https://teslo-julienlemee-julienlemees-projects.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
@@ -94,16 +94,16 @@ export default function Projects() {
       ],
       keyFeatures: [
         {
-          text: "Interactive UI with smooth transitions",
-          icon: "/icons/ui.svg",
+          text: "Responsive and interactive UI design",
+          icon: "/icons/mobile-icon.svg",
         },
         {
-          text: "Streaming content simulation with API integration",
-          icon: "/icons/api.svg",
+          text: "API integration for streaming content simulation",
+          icon: "/icons/video-icon.svg",
         },
         {
-          text: "User authentication and secure session handling",
-          icon: "/icons/authentication.svg",
+          text: "Dynamic content loading and routing with Next.js",
+          icon: "/icons/speed-icon.svg",
         },
       ],
       link: "https://disney-clone-julienlemee.vercel.app/",
@@ -140,6 +140,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <GradienBadge />
     </div>
   );
 }
