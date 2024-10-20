@@ -1,15 +1,40 @@
-import React from "react";
-import RevealBox from "./RevealBox";
-import BoxReveal from "@/components/ui/box-reveal";
+'use client';
+
+import React, { useEffect, useState } from "react";
+import { heroAnimation } from "../../animations/heroAnimation";
+import Loader from "./Loader"; // Importer le loader
+import gsap from "gsap";
 
 export default function Hero() {
+  const [loading, setLoading] = useState(true); // État pour le chargement
+
+  useEffect(() => {
+    // Simule le chargement de la page
+    const timeout = setTimeout(() => {
+      setLoading(false); // Désactiver le loader après 3 secondes
+    }, 3000); // Temps de chargement simulé (3s)
+
+    return () => clearTimeout(timeout); // Nettoyage
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      heroAnimation(); // Lancer l'animation après le chargement
+    }
+  }, [loading]); // Appeler heroAnimation quand loading devient false
+
+  if (loading) {
+    return <Loader />; // Afficher le loader pendant le chargement
+  }
+
+  // Contenu une fois que le chargement est terminé
   return (
     <section className="flex flex-1 flex-col px-3 md:px-6 lg:px-10 h-svh justify-end pb-24 pt-[88px]">
       <div className="flex flex-col text-left mx-auto w-full max-w-[1920px] relative z-[1]">
-        <p className="min-w-full pb-1 font-mono text-[13px] uppercase">
+        <p className="hero-heading-small min-w-full pb-1 font-mono text-[13px] uppercase">
           [000. Where It All Starts]
         </p>
-        <h1 className="w-full text-[32px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
+        <h1 className="hero-heading-large w-full text-[32px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
           Hi I'm Julien
           <br />
           full stack
@@ -17,12 +42,12 @@ export default function Hero() {
           web developer
         </h1>
         <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-pink]">
-          <div className="text-xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
+          <div className="hero-paragraph text-xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
             <p className="w-full lg:max-w-[70%]">
               I learn and improve every day to take on new challenges.
             </p>
           </div>
-          <div className="flex w-full flex-row items-center justify-stretch gap-x-2 py-5 md:w-auto md:pl-10 md:pr-8">
+          <div className="hero-buttons flex w-full flex-row items-center justify-stretch gap-x-2 py-5 md:w-auto md:pl-10 md:pr-8">
             <a
               href="https://github.com/julienLeMee"
               target="_blank"

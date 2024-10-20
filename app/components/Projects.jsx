@@ -127,7 +127,7 @@ export default function Projects() {
       </div>
 
       <div className="">
-        <div className="flex py-5">
+        <div className="flex md:flex-row flex-col py-5 min-h-[500px]">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
