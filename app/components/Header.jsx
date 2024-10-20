@@ -84,7 +84,7 @@ export default function Header() {
 
       {/* Menu pour mobile */}
       {isMobileMenuOpen && (
-        <div className={`inset-x-0 top-0 flex w-full justify-center overflow-hidden border-b border-solid border-transparent px-3 pt-6 transition-all duration-500 md:items-center md:pt-0 md:overflow-auto md:px-10 bg-[--color-pink] md:max-h-unset z-[100] text-black absolute ${isMobileMenuOpen ? "h-full" : "h-0"}`}>
+        <div className={`fixed inset-x-0 top-0 flex w-full justify-center overflow-hidden border-b border-solid border-transparent px-3 pt-6 transition-all duration-500 md:items-center md:pt-0 md:overflow-auto md:px-10 bg-[--color-pink] md:max-h-unset z-[100] text-black h-full ${isMobileMenuOpen ? "translate-x-0" : "-translate-y-full"}`}>
           <div className="absolute inset-x-2 top-0 flex h-[calc(100svh-24px)] flex-col items-center justify-between overflow-hidden md:hidden">
             <div className="flex items-center justify-between w-full py-4 px-1">
               <p className="text-base font-bold leading-[1.1] flex gap-2 items-center">
