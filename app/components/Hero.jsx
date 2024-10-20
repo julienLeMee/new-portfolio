@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import { heroAnimation } from "../../animations/heroAnimation";
 import Loader from "./Loader";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
+import { Canvas } from '@react-three/fiber';
+import ParticlesComponent from "./ParticlesComponent";
 
-const HeroScene = dynamic(() => import('../components/HeroScene'), {
-
-    ssr: false,
-
-})
+const HeroScene = dynamic(() => import("../components/HeroScene"), {
+  ssr: false,
+});
 
 export default function Hero() {
   const [loading, setLoading] = useState(true); // État pour le chargement
@@ -52,6 +52,9 @@ export default function Hero() {
           </div>
           {/* THREE JS COMPONENT */}
           {/* <HeroScene /> */}
+          {/* <Canvas className="absolute" style={{ background: "#181818", height: "100vh" }}>
+            <ParticlesComponent />
+          </Canvas> */}
         </div>
         <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-pink]">
           <div className="hero-paragraph text-xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
