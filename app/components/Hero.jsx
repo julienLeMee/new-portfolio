@@ -1,8 +1,15 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { heroAnimation } from "../../animations/heroAnimation";
 import Loader from "./Loader";
+import dynamic from 'next/dynamic'
+
+const HeroScene = dynamic(() => import('../components/HeroScene'), {
+
+    ssr: false,
+
+})
 
 export default function Hero() {
   const [loading, setLoading] = useState(true); // État pour le chargement
@@ -30,16 +37,22 @@ export default function Hero() {
   return (
     <section className="flex flex-1 flex-col px-3 md:px-6 lg:px-10 h-svh justify-end pb-24 pt-[88px]">
       <div className="flex flex-col text-left mx-auto w-full max-w-[1920px] relative z-[1]">
-        <p className="hero-heading-small min-w-full pb-1 font-mono text-[13px] uppercase">
-          [000. Where It All Starts]
-        </p>
-        <h1 className="hero-heading-large w-full text-[32px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
-          Hi I'm Julien
-          <br />
-          full stack
-          <br />
-          web developer
-        </h1>
+        <div className="flex justify-between">
+          <div className="flex flex-col">
+            <p className="hero-heading-small min-w-full pb-1 font-mono text-[13px] uppercase">
+              [000. Where It All Starts]
+            </p>
+            <h1 className="hero-heading-large w-full text-[32px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
+              Hi I'm Julien
+              <br />
+              full stack
+              <br />
+              web developer
+            </h1>
+          </div>
+          {/* THREE JS COMPONENT */}
+          <HeroScene />
+        </div>
         <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-pink]">
           <div className="hero-paragraph text-xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
             <p className="w-full lg:max-w-[70%]">

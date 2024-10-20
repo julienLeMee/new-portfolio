@@ -31,7 +31,7 @@ const SingleProject = ({
         Technologies
       </h3>
       <div className="dark:text-white text-[--color-dark-text] my-2">
-        <ul className="flex gap-2">
+        <ul className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <li key={index} className="flex flex-col items-center gap-1">
               <ShinyBadge key={index} text={tech.name} logo={tech.logo} />

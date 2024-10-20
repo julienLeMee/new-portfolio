@@ -78,8 +78,8 @@ const ThreeJSComponent = () => {
         position: "absolute",
         top: 0,
         left: 0,
-        height: "100vh",
-        width: "100vw",
+        height: "100px",
+        width: "100px",
         pointerEvents: "none",
       }}
     />
