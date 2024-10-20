@@ -28,7 +28,7 @@ export default function Projects() {
           icon: "/icons/mobile-icon.svg",
         },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://yum-list-aged-water-5075.fly.dev/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // LA FERME DE NOVELLE
@@ -79,7 +79,7 @@ export default function Projects() {
         },
         { text: "Optimized for fast load times", icon: "/icons/fast-load.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://teslo-julienlemee-julienlemees-projects.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // DISNEY CLONE
@@ -106,7 +106,7 @@ export default function Projects() {
           icon: "/icons/authentication.svg",
         },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://disney-clone-julienlemee.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
   ];

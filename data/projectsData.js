@@ -16,7 +16,7 @@ const projects = [
         { text: "Integration with Google Maps for restaurant locations", icon: "/icons/mobile-icon.svg" },
         { text: "Social sharing features for favorite spots", icon: "/icons/mobile-icon.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://yum-list-aged-water-5075.fly.dev/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // TESLA CLONE
@@ -34,7 +34,7 @@ const projects = [
         { text: "Dynamic content loading with Next.js", icon: "/icons/dynamic-content.svg" },
         { text: "Responsive design optimized for all devices", icon: "/icons/responsive.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://teslo-julienlemee-julienlemees-projects.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // NIKE CLONE
@@ -52,7 +52,7 @@ const projects = [
         { text: "Fully responsive across all devices", icon: "/icons/responsive.svg" },
         { text: "Optimized for fast load times", icon: "/icons/fast-load.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://nyke.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // DISNEY CLONE
@@ -70,7 +70,7 @@ const projects = [
         { text: "Streaming content simulation with API integration", icon: "/icons/api.svg" },
         { text: "User authentication and secure session handling", icon: "/icons/authentication.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://disney-clone-julienlemee.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // STAR WARS EMPIRE BASE
@@ -88,7 +88,7 @@ const projects = [
         { text: "Immersive user experience with WebGL", icon: "/icons/webgl.svg" },
         { text: "Real-time interactions and dynamic environment", icon: "/icons/real-time.svg" },
       ],
-      link: "https://link-to-project-one.com",
+      link: "https://star-wars-imperial-base.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // LA FERME DE NOVELLE
