@@ -13,6 +13,13 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ThreeJSComponent from "./components/ThreeJSComponent";
 import { ContactForm } from "./components/ContactForm";
+import dynamic from 'next/dynamic'
+
+const Scene = dynamic(() => import('./components/Scene'), {
+
+    ssr: false,
+
+})
 
 export default function Home() {
   return (
@@ -26,6 +33,7 @@ export default function Home() {
           <RevealText />
           <Projects />
           <ContactForm />
+          <Scene />
           {/* <DotBg /> */}
           {/* <TextFade /> */}
           {/* <InfiniteSlider />
