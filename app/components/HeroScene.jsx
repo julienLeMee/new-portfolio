@@ -12,7 +12,7 @@ export default function Index() {
 
   return (
 
-    <Canvas className='custom-hero__canvas bg-transparent dark:opacity-100 opacity-25 -z-10 md:top-0 -top-3/4' style={{overflow: 'visible', position: 'absolute', right: '0', height:'100vh'}}>
+    <Canvas className='custom-hero__canvas bg-transparent dark:opacity-100 opacity-25 -z-10 md:-top-1/2 -top-3/4' style={{overflow: 'visible', position: 'absolute', right: '0', height:'100vh'}}>
 
         <HeroModel />
 

@@ -51,7 +51,7 @@ export default function Hero() {
             </h1>
           </div>
           {/* THREE JS COMPONENT */}
-          <HeroScene />
+          {/* <HeroScene /> */}
         </div>
         <div className="flex w-full flex-col md:flex-row md:border-b md:border-t md:border-solid md:border-[--color-pink]">
           <div className="hero-paragraph text-xl font-normal leading-[1.1] md:text-[32px] md:leading-[1] border-y border-solid border-[--color-pink] py-5 md:border-y-0 md:border-r md:py-8 w-full">
