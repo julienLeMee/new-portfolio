@@ -12,7 +12,7 @@ export default function Index() {
 
   return (
 
-    <Canvas style={{background: '#181818', height: '100vh'}}>
+    <Canvas className='bg-background' style={{height: '100vh'}}>
 
         <Model />
 
