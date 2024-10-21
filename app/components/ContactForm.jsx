@@ -161,6 +161,7 @@ export function ContactForm() {
                 ref={recaptchaRef}
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} // Utilisation de la clé d'environnement
                 onChange={(value) => form.setValue("recaptcha", value)} // Enregistre la valeur du CAPTCHA
+                theme="dark"
               />
               <FormMessage name="recaptcha" />
             </div>

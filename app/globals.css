@@ -153,7 +153,9 @@ html {
   }
 
   .recaptcha__wrapper iframe {
-    border-radius: .5rem;
+    border-radius: 0.5rem;
+    max-height: 76px;
+    max-width: 302px;
   }
 
 }
