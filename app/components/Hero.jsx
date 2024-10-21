@@ -40,7 +40,7 @@ export default function Hero() {
             <p className="hero-heading-small min-w-full pb-1 font-mono text-[13px] uppercase">
               [000. Where It All Starts]
             </p>
-            <h1 className="hero-heading-large w-full text-[32px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
+            <h1 className="hero-heading-large w-full text-[40px] font-bold uppercase leading-[0.8] py-5 md:text-[88px]">
               Hi I'm Julien
               <br />
               full stack

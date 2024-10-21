@@ -12,7 +12,7 @@ export default function ProjectCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group h-[500px] inline-flex flex-1 hover:flex-[4] flex-col bg-[--color-dark-bg] transition-all duration-300 hover:bg-[--color-pink] dark:hover:bg-[--color-pink] relative before:absolute before:inset-0 before:bg-gradient-to-t before:from-black before:via-transparent before:content-['']"
+      className="group md:h-[500px] inline-flex flex-1 hover:flex-[4] flex-col bg-[--color-dark-bg] transition-all duration-300 hover:bg-[--color-pink] dark:hover:bg-[--color-pink] relative before:absolute before:inset-0 before:bg-gradient-to-t before:from-black before:via-transparent before:content-['']"
       style={{
         backgroundImage: `url(${imageSrc})`,
         backgroundSize: "cover",
@@ -20,7 +20,7 @@ export default function ProjectCard({
       }}
     >
       <div className="relative mb-4 h-full w-full overflow-hidden"></div>
-      <h3 className="w-max mb-6 text-2xl leading-[1.1] md:text-[32px] text-white z-10 transition-all duration-500 ease-in-out md:custom-rotate uppercase text-[clamp(1.5rem,5vw,4.5rem)] font-extrabold absolute bottom-0 left-[50px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+      <h3 className="w-max mb-6 text-2xl leading-[1.1] md:text-[32px] text-white z-10 transition-all duration-500 ease-in-out md:custom-rotate uppercase text-[clamp(1.5rem,5vw,4.5rem)] font-extrabold absolute bottom-0 left-[5%] md:left-[50px] drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
         {title}
       </h3>
       <div className="absolute w-3/4 top-0 md:top-auto md:bottom-0 right-0 p-8 text-right text-base opacity-0 transition-opacity duration-300 delay-200 group-hover:opacity-100">
