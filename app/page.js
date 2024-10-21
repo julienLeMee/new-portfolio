@@ -32,13 +32,13 @@ export default function Home() {
           <Hero />
           <RevealText />
           <Projects />
+          {/* <InfiniteSlider /> */}
           <ContactForm />
           <Scene />
           {/* <DotBg /> */}
           {/* <TextFade /> */}
-          {/* <InfiniteSlider />
-        <ButtonSection />
-        <div className="container mx-auto p-4">
+        {/* <ButtonSection /> */}
+        {/* <div className="container mx-auto p-4">
         <Collapsible />
         </div> */}
           {/* <LogoCloud /> */}

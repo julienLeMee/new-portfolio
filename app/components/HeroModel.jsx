@@ -9,14 +9,14 @@ export default function Model() {
     const torus = useRef(null);
 
     // Définit les propriétés du matériau sans utiliser les controls de 'leva'
-    const materialProps = {
-        thickness: 0.2,
-        roughness: 0,
-        transmission: 1,
-        ior: 1.2,
-        chromaticAberration: 0.02,
-        backside: true,
-    };
+    // const materialProps = {
+    //     thickness: 0.2,
+    //     roughness: 0,
+    //     transmission: 1,
+    //     ior: 1.2,
+    //     chromaticAberration: 0.02,
+    //     backside: true,
+    // };
 
     useFrame(() => {
         torus.current.rotation.x += 0.001;
@@ -26,7 +26,7 @@ export default function Model() {
     return (
         <group scale={viewport.width / 3.75}>
             <mesh ref={torus} {...nodes.ToreSurf} scale={[0.8, 0.8, 0.8]}>
-                <MeshTransmissionMaterial {...materialProps} />
+                <MeshTransmissionMaterial />
             </mesh>
         </group>
     );

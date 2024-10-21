@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -10,10 +10,8 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -29,26 +27,74 @@ const formSchema = z.object({
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
+  recaptcha: z.string().nonempty({
+    message: "Please complete the reCAPTCHA",
+  }),
 });
 
 // Définition du composant ContactForm
 export function ContactForm() {
+  // État pour gérer le message de notification
+  const [notification, setNotification] = useState("");
+
   // Initialisation du formulaire
   const form = useForm({
     resolver: zodResolver(formSchema),
   });
 
-  // Fonction de gestion de soumission
-  const onSubmit = (data) => {
-    console.log(data); // Gérer la soumission ici
-    // Envoi du courriel ou traitement des données
-  };
+  const recaptchaRef = useRef();
 
-  const recaptchaRef = React.useRef();
+  // Fonction de gestion de soumission
+  const onSubmit = async (data) => {
+    const recaptchaValue = data.recaptcha; // Récupère la valeur du reCAPTCHA
+
+    try {
+      // Vérifiez le reCAPTCHA via votre API
+      const recaptchaResponse = await fetch("/api/verifyRecaptcha", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ recaptchaResponse: recaptchaValue }),
+      });
+
+      const recaptchaData = await recaptchaResponse.json();
+
+      if (!recaptchaData.success) {
+        console.error("reCAPTCHA verification failed:", recaptchaData.errorCodes);
+        return;
+      }
+
+      // Envoi de l'email si reCAPTCHA est validé
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        console.log("Email sent successfully");
+        setNotification("Your message has been sent successfully!"); // Notification d'envoi réussi
+        form.reset(); // Réinitialise le formulaire
+        recaptchaRef.current.reset(); // Réinitialise le reCAPTCHA
+      } else {
+        console.error("Failed to send email");
+        setNotification("Failed to send your message. Please try again."); // Notification d'erreur
+      }
+    } catch (error) {
+      console.error("An error occurred", error);
+      setNotification("An error occurred. Please try again."); // Notification d'erreur
+    }
+  };
 
   return (
     <>
-      <div id="#lets-get-in-touch" className="max-w-screen-sm p-3 md:p-6 lg:p-10 flex flex-col text-center mx-auto">
+      <div
+        id="#lets-get-in-touch"
+        className="max-w-screen-sm p-3 md:p-6 lg:p-10 flex flex-col text-center mx-auto"
+      >
         <p className="min-w-full pb-1 font-mono text-[13px] uppercase">
           [003. Let's get in touch]
         </p>
@@ -56,6 +102,14 @@ export function ContactForm() {
           Contact me if you would like us to work{" "}
           <span className="text-[--color-pink]">together.</span>
         </h1>
+
+        {/* Affichage de la notification */}
+        {notification && (
+          <div className="my-4 p-2 bg-green-200 text-green-800 rounded-md">
+            {notification}
+          </div>
+        )}
+
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="my-8">
             <FormField
@@ -63,7 +117,6 @@ export function ContactForm() {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  {/* <FormLabel className="block mt-4 mb-2">Your name</FormLabel> */}
                   <FormControl>
                     <Input placeholder="Name" {...field} />
                   </FormControl>
@@ -77,7 +130,6 @@ export function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  {/* <FormLabel className=" block mt-4 mb-2">Your email</FormLabel> */}
                   <FormControl>
                     <Input placeholder="Email" type="email" {...field} />
                   </FormControl>
@@ -91,7 +143,6 @@ export function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  {/* <FormLabel className="block mt-4 mb-2">Message</FormLabel> */}
                   <FormControl>
                     <textarea
                       placeholder="Your message here..."
@@ -105,14 +156,14 @@ export function ContactForm() {
             />
 
             {/* Ajout du reCAPTCHA */}
-            {/* <div className="my-4">
+            <div className="my-4 flex justify-center recaptcha__wrapper">
               <ReCAPTCHA
                 ref={recaptchaRef}
-                sitekey="YOUR_SITE_KEY" // Remplacez par votre clé de site reCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} // Utilisation de la clé d'environnement
                 onChange={(value) => form.setValue("recaptcha", value)} // Enregistre la valeur du CAPTCHA
               />
               <FormMessage name="recaptcha" />
-            </div> */}
+            </div>
 
             <Button className="w-fit" type="submit">
               Submit

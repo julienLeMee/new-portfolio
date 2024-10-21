@@ -151,4 +151,9 @@ html {
     object-fit: none;
     overflow: visible;
   }
+
+  .recaptcha__wrapper iframe {
+    border-radius: .5rem;
+  }
+
 }
