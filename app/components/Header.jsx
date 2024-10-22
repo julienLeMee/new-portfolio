@@ -14,7 +14,7 @@ export default function Header() {
 
   // Vérifie la préférence de l'utilisateur et applique le mode correspondant
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     const isDarkMode = savedTheme === "dark";
     setIsDarkMode(isDarkMode); // Mise à jour avec l'état initial correct
     document.documentElement.classList.toggle("dark", isDarkMode);
