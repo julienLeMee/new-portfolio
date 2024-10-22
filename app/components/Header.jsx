@@ -59,13 +59,86 @@ export default function Header() {
           href="/"
           className="text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
         >
-          <img
-            src="./logos/jl.svg"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="ui-flex-none ui-fill-black fill-current"
-          />
+          <svg
+            width="48"
+            height="48"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="194.75625 -2.8 110.4875 155.6"
+            style={{ background: "rgba(0, 0, 0, 0)" }}
+            preserveAspectRatio="xMidYMid"
+          >
+            <defs>
+              <filter id="editing-extrude-glow">
+                <feFlood floodColor="#333333" result="flood-1" />
+                <feMorphology
+                  operator="erode"
+                  radius="1"
+                  in="SourceAlpha"
+                  result="erode"
+                />
+                <feComposite
+                  operator="in"
+                  in="flood-1"
+                  in2="erode"
+                  result="comp1"
+                />
+                <feConvolveMatrix
+                  order="0,0"
+                  divisor="1"
+                  in="comp1"
+                  result="convolve"
+                />
+                <feOffset dx="0" dy="0" in="convolve" result="extrude" />
+                <feComposite
+                  operator="in"
+                  in="flood-1"
+                  in2="extrude"
+                  result="comp-extrude"
+                />
+                <feFlood floodColor="rgba(20%,20%,20%,0)" result="flood-2" />
+                <feComposite
+                  operator="in"
+                  in="flood-2"
+                  in2="SourceAlpha"
+                  result="comp2"
+                />
+                <feMorphology
+                  operator="dilate"
+                  radius="1"
+                  in="comp2"
+                  result="dilate"
+                />
+                <feOffset dx="0" dy="0" in="dilate" result="offset" />
+                <feGaussianBlur in="offset" stdDeviation="5.8" result="blur" />
+                <feComponentTransfer in="blur" result="shadow">
+                  <feFuncA type="linear" slope="0.8" intercept="-0.2" />
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode in="shadow" />
+                  <feMergeNode in="comp-extrude" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#editing-extrude-glow)">
+              <g transform="translate(217.03, 102)">
+                <path
+                  d="M5.31-11.25L5.31-11.25L1.47-11.25L1.47-13.50L5.31-13.50L5.31-13.50Q6.97-13.50 8.09-14.75L8.09-14.75L8.09-14.75Q9.22-16 9.22-18.06L9.22-18.06L9.22-51.75L11.47-51.75L11.47-18.06L11.47-18.06Q11.47-15.09 9.69-13.17L9.69-13.17L9.69-13.17Q7.91-11.25 5.31-11.25ZM5.31-6.75L5.31-6.75L1.47-6.75L1.47-9L5.31-9L5.31-9Q8.81-9 11.27-11.66L11.27-11.66L11.27-11.66Q13.72-14.31 13.72-18.06L13.72-18.06L13.72-51.75L15.97-51.75L15.97-18.06L15.97-18.06Q15.97-13.38 12.86-10.06L12.86-10.06L12.86-10.06Q9.75-6.75 5.31-6.75ZM5.31-2.25L5.31-2.25L1.47-2.25L1.47-4.50L5.31-4.50L5.31-4.50Q10.69-4.50 14.45-8.47L14.45-8.47L14.45-8.47Q18.22-12.44 18.22-18.06L18.22-18.06L18.22-51.75L20.47-51.75L20.47-18.06L20.47-18.06Q20.47-13.78 18.45-10.14L18.45-10.14L18.45-10.14Q16.44-6.50 12.94-4.38L12.94-4.38L12.94-4.38Q9.44-2.25 5.31-2.25ZM5.31 2.25L5.31 2.25L1.47 2.25L1.47 0L5.31 0L5.31 0Q8.88 0 12.09-1.44L12.09-1.44L12.09-1.44Q15.31-2.88 17.64-5.30L17.64-5.30L17.64-5.30Q19.97-7.72 21.34-11.06L21.34-11.06L21.34-11.06Q22.72-14.41 22.72-18.06L22.72-18.06L22.72-51.75L24.97-51.75L24.97-18.06L24.97-18.06Q24.97-13.94 23.42-10.19L23.42-10.19L23.42-10.19Q21.88-6.44 19.23-3.70L19.23-3.70L19.23-3.70Q16.59-0.97 12.95 0.64L12.95 0.64L12.95 0.64Q9.31 2.25 5.31 2.25ZM30.72 0L30.72-51.75L32.97-51.75L32.97 0L30.72 0ZM44.22 0L44.22-51.75L46.47-51.75L46.47-11.25L64.47-11.25L64.47-9L46.47-9L46.47-6.75L64.47-6.75L64.47-4.50L46.47-4.50L46.47-2.25L64.47-2.25L64.47 0L44.22 0ZM39.72 0L39.72-51.75L41.97-51.75L41.97 0L39.72 0ZM35.22 0L35.22-51.75L37.47-51.75L37.47 0L35.22 0Z"
+                  fill="#e3afbe"
+                />
+              </g>
+            </g>
+            <style>
+              {`
+        text {
+          font-size: 64px;
+          font-family: Arial Black;
+          dominant-baseline: central;
+          text-anchor: middle;
+        }
+      `}
+            </style>
+          </svg>
           Julien Le Mee
         </Link>
 
