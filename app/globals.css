@@ -11,6 +11,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit (Chrome, Safari, etc.) */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -157,5 +166,4 @@ html {
     max-height: 76px;
     max-width: 302px;
   }
-
 }

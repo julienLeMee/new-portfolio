@@ -43,7 +43,7 @@ const SingleProject = ({
         Key Features
       </h3>
       <div className="dark:text-white text-[--color-dark-text] my-2">
-        <ul className="grid grid-cols-3 gap-2">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           {keyFeatures.map((feature) => (
             <li
               key={feature.text}

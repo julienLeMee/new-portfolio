@@ -34,10 +34,10 @@ export default function Footer() {
           </div>
           <div className="flex w-full flex-row items-end pt-6">
             <div className="w-1/2 md:w-2/5 lg:w-3/12">
-              <Image
-                src="/logos/jl-2.svg"
+              <img
+                src="/logos/jl.svg"
                 alt="Logo"
-                width={85}
+                width={32}
                 height={32}
                 className="ui-flex-none ui-fill-black fill-current"
               />

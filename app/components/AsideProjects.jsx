@@ -15,7 +15,7 @@ const AsideProjects = () => {
   return (
     <aside className="h-full flex sm:flex-row flex-col w-full text-white">
       {/* Colonne des onglets */}
-      <div className="flex sm:flex-col flex-row flex-wrap sm:py-16 py-4 pl-10 sm:pr-0 pr-10 gap-2 sm:w-1/5 w-full bg-transparent">
+      <div className="w-full grid grid-flow-col md:flex overflow-x-auto auto-cols-max hide-scrollbar md:flex-col md:flex-wrap sm:py-16 py-4 pl-10 sm:pr-0 pr-10 gap-2 sm:w-1/5 bg-transparent">
         {projects.map((project, index) => (
           <button
             key={project.id || project.title}

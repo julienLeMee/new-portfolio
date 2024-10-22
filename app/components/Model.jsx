@@ -28,7 +28,7 @@ export default function Model() {
             <Text position={[0, 0, -1]} fontSize={0.5} color="white" anchorX="center" anchorY="middle">
             Creative Developer
             </Text>
-            <mesh ref={torus} {...nodes.ToreSurf} scale={[0.5, 0.5, 0.5]}>
+            <mesh ref={torus} {...nodes.ToreSurf} scale={[0.6, 0.6, 0.6]}>
                 <MeshTransmissionMaterial {...materialProps} />
             </mesh>
         </group>
