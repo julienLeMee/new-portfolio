@@ -14,10 +14,18 @@ export default function Header() {
 
   // Vérifie la préférence de l'utilisateur et applique le mode correspondant
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    const isDarkMode = savedTheme === "dark";
-    setIsDarkMode(isDarkMode); // Mise à jour avec l'état initial correct
-    document.documentElement.classList.toggle("dark", isDarkMode);
+    const savedTheme = localStorage.getItem("theme");
+
+    // Si aucun thème n'est sauvegardé, par défaut utilise le thème sombre
+    if (!savedTheme) {
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      const isDarkMode = savedTheme === "dark";
+      setIsDarkMode(isDarkMode);
+      document.documentElement.classList.toggle("dark", isDarkMode);
+    }
   }, []);
 
   // Désactiver ou réactiver le scroll en fonction de l'état du menu mobile
@@ -52,7 +60,7 @@ export default function Header() {
           className="text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
         >
           <img
-            src="/logos/jl.svg"
+            src="./logos/jl.svg"
             alt="Logo"
             width={32}
             height={32}

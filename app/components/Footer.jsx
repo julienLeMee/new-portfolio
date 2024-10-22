@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="flex w-full flex-row items-end pt-6">
             <div className="w-1/2 md:w-2/5 lg:w-3/12">
               <img
-                src="/logos/jl.svg"
+                src="./logos/jl.svg"
                 alt="Logo"
                 width={32}
                 height={32}
