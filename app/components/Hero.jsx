@@ -33,7 +33,7 @@ export default function Hero() {
 
   // Contenu une fois que le chargement est terminé
   return (
-    <section className="flex flex-1 flex-col px-3 md:px-6 lg:px-10 h-svh justify-center md:justify-end pb-24 pt-[88px]">
+    <section className="flex flex-1 flex-col px-3 md:px-6 lg:px-10 h-svh justify-center pb-24 pt-[88px]">
       <div className="flex flex-col text-left mx-auto w-full max-w-[1920px] relative z-[1]">
         <div className="flex justify-between">
           <div className="flex flex-col">

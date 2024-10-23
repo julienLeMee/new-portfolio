@@ -62,8 +62,8 @@ export default function Header() {
           <img
             src="/logos/jl.svg"
             alt="Logo"
-            width={32}
-            height={32}
+            width={48}
+            height={48}
             className="ui-flex-none ui-fill-black fill-current"
           />
           Julien Le Mee
@@ -106,12 +106,12 @@ export default function Header() {
           <div className="absolute inset-x-2 top-0 flex h-[calc(100svh-24px)] flex-col items-center justify-between overflow-hidden md:hidden">
             <div className="flex items-center justify-between w-full py-4 px-1">
               <p className="text-base font-bold leading-[1.1] flex gap-2 items-center">
-                <Image
+                <img
                   src="/logos/jl-2.svg"
                   alt="Logo"
                   width={32}
                   height={32}
-                  // className="rotate"
+                  className="ui-flex-none ui-fill-black fill-current"
                 />
                 Julien Le Mee
               </p>
