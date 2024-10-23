@@ -59,12 +59,11 @@ export default function Header() {
           href="/"
           className="text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
         >
-          <img
+          <Image
             src="/logos/jl.svg"
             alt="Logo"
             width={48}
             height={48}
-            className="ui-flex-none ui-fill-black fill-current"
           />
           Julien Le Mee
         </Link>
