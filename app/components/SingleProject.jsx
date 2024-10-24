@@ -62,6 +62,7 @@ const SingleProject = ({
       <Link
         href={link}
         className="w-fit flex items-center gap-2 pt-8 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
+        target="_blank"
       >
         <svg
           width="16px"

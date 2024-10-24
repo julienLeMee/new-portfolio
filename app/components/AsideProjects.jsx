@@ -62,6 +62,7 @@ const AsideProjects = () => {
                 <Link
                   href={project.github}
                   className="flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
+                  target="_blank"
                 >
                   <svg
                     width="16px"
@@ -93,6 +94,7 @@ const AsideProjects = () => {
                   key={index}
                   href={project.link}
                   className="flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
+                  target="_blank"
                 >
                   <svg
                     width="16px"
