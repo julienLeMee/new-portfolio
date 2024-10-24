@@ -40,7 +40,7 @@ export default function Footer() {
               <ul className="text-[15px] font-normal leading-[1.1] lg:flex lg:w-full lg:max-w-[440px] lg:justify-between">
                 <li className="whitespace-nowrap py-2">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/julien-le-mee/"
                     className="flex items-center gap-2 lg:hover:underline"
                   >
                     <svg
@@ -86,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li className="whitespace-nowrap py-2">
                   <a
-                    href="#"
+                    href="https://github.com/julienLeMee"
                     className="flex items-center gap-2 lg:hover:underline"
                   >
                     <svg
@@ -118,7 +118,7 @@ export default function Footer() {
                 </li>
                 <li className="whitespace-nowrap py-2">
                   <a
-                    href="#"
+                    href="https://x.com/majin__bun"
                     className="flex items-center gap-2 lg:hover:underline"
                   >
                     <svg
