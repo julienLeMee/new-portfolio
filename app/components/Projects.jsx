@@ -40,6 +40,7 @@ export default function Projects() {
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "MapBox API", logo: "/logos/mapbox.svg" },
+        { name: "OpenWeather API", logo: "/logos/openweathermap.png" },
         { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
       ],
       keyFeatures: [

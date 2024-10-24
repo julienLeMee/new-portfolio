@@ -85,6 +85,7 @@ const projects = [
     description: "A clone of Disney's streaming service interface.",
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
+      { name: "The Movie DB API", logo: "/logos/the-movie-db.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
       { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
     ],
@@ -140,6 +141,7 @@ const projects = [
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "MapBox API", logo: "/logos/mapbox.svg" },
+      { name: "OpenWeather API", logo: "/logos/openweathermap.png" },
       { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
     ],
     keyFeatures: [
