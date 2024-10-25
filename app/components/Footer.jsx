@@ -43,7 +43,7 @@ export default function Footer() {
               >
                 <defs>
                   <filter id="editing-extrude-glow">
-                    <feFlood flood-color="#333333" result="flood-1"></feFlood>
+                    <feFlood floodColor="#333333" result="flood-1"></feFlood>
                     <feMorphology
                       operator="erode"
                       radius="1"
@@ -57,11 +57,11 @@ export default function Footer() {
                       result="comp1"
                     ></feComposite>
                     <feConvolveMatrix
-                      order="0,0"
-                      divisor="1"
+                      order="3 3"
+                      divisor="16"
                       in="comp1"
                       result="convolve"
-                      kernelMatrix=""
+                      kernelMatrix="1 2 1 2 4 2 1 2 1"
                     ></feConvolveMatrix>
                     <feOffset
                       dx="0"
@@ -76,7 +76,7 @@ export default function Footer() {
                       result="comp-extrude"
                     ></feComposite>
                     <feFlood
-                      flood-color="rgba(20%,20%,20%,0)"
+                      floodColor="rgba(20%,20%,20%,0)"
                       result="flood-2"
                     ></feFlood>
                     <feComposite
@@ -247,7 +247,8 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-4 text-xs flex justify-end w-full text-[#181818]/50">
-            Design largely inspired by Awwwards submissions, particularly from hellohelloteam, seb_sma, and pablo-picart.
+            Design largely inspired by Awwwards submissions, particularly from
+            hellohelloteam, seb_sma, and pablo-picart.
           </div>
         </div>
       </div>
