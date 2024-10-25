@@ -49,7 +49,7 @@ const projects = [
       },
     ],
     link: "https://teslo-julienlemee-julienlemees-projects.vercel.app/",
-    github: "https://github.com/julienLeMee/yum-list",
+    github: "https://github.com/julienLeMee/teslo",
   },
   // NIKE CLONE
   {
@@ -76,7 +76,7 @@ const projects = [
       },
     ],
     link: "https://nyke.vercel.app/",
-    github: "https://github.com/julienLeMee/yum-list",
+    github: "https://github.com/julienLeMee/nyke",
   },
   // DISNEY CLONE
   {
@@ -104,7 +104,7 @@ const projects = [
       },
     ],
     link: "https://disney-clone-julienlemee.vercel.app/",
-    github: "https://github.com/julienLeMee/yum-list",
+    github: "https://github.com/julienLeMee/disney-clone",
   },
   // STAR WARS EMPIRE BASE
   {
@@ -131,7 +131,7 @@ const projects = [
       },
     ],
     link: "https://star-wars-imperial-base.vercel.app/",
-    github: "https://github.com/julienLeMee/yum-list",
+    github: "https://github.com/julienLeMee/star-wars-imperial-base",
   },
   // LA FERME DE NOVELLE
   {
@@ -159,7 +159,29 @@ const projects = [
       },
     ],
     link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
-    github: "https://github.com/julienLeMee/yum-list",
+    github: "https://github.com/julienLeMee/novelle-farm",
+  },
+  // LA BERJOTINE
+  {
+    imageSrc: "/projects/la-berjotine.jpg",
+    title: "La Berjotine",
+    description: "A website for a french guesthouse.",
+    technologies: [
+      { name: "Next JS", logo: "/logos/nextjs.svg" },
+      { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+    ],
+    keyFeatures: [
+      {
+        text: "Responsive and interactive UI design",
+        icon: "/icons/mobile-icon.svg",
+      },
+      {
+        text: "Dynamic content loading and routing with Next.js",
+        icon: "/icons/speed-icon.svg",
+      },
+    ],
+    link: "https://www.laberjotine.fr/",
+    github: "https://github.com/julienLeMee/la-berjotine",
   },
 ];
 
