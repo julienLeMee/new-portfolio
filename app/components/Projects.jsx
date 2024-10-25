@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
 import { GradienBadge } from "./GradientBadge";
 import ProjectCard from "./ProjectCard";
+import { initAnimations } from "../../animations/projectsAnimation";
 
 export default function Projects() {
   const projects = [
@@ -112,16 +116,33 @@ export default function Projects() {
     },
   ];
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      initAnimations();
+    }, 100); // Donne un petit délai pour s'assurer que les éléments sont dans le DOM
+
+    return () => clearTimeout(timeout); // Nettoie le timeout si le composant est démonté
+  }, []);
+
   return (
     <div id="selected-projects" className="my-32 flex flex-col">
       <div className="w-full px-3 md:px-6 lg:px-10 pb-16">
-        <p className="max-w-[1920px] min-w-full pb-1 font-mono text-[13px] uppercase">
+        <p
+          id="selected-subtitle"
+          className="opacity-0 transition-all duration-700 max-w-[1920px] min-w-full pb-1 font-mono text-[13px] uppercase"
+        >
           [002. Selected Works]
         </p>
-        <h2 className="w-full text-[40px] font-bold uppercase leading-[0.8] py-6 md:pb-10 md:text-[80px]">
+        <h2
+          id="selected-title"
+          className="opacity-0 transition-all duration-700 w-full text-[40px] font-bold uppercase leading-[0.8] py-6 md:pb-10 md:text-[80px]"
+        >
           Tailored Experiences
         </h2>
-        <p className="max-w-[550px] text-2xl font-normal leading-[1.1] text-pink md:text-[32px] md:leading-[1] w-full">
+        <p
+          id="selected-description"
+          className="opacity-0 transition-all duration-700 max-w-[550px] text-2xl font-normal leading-[1.1] text-pink md:text-[32px] md:leading-[1] w-full"
+        >
           Bringing custom web solutions to life, designed to meet your unique
           needs.
         </p>

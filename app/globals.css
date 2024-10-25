@@ -166,4 +166,15 @@ html {
     max-height: 76px;
     max-width: 302px;
   }
+
+  .scroll-hidden {
+    opacity: 0; /* Masque l'élément au départ */
+    transform: translateY(20px); /* Décale légèrement l'élément vers le bas */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Ajoute une transition pour la visibilité */
+  }
+
+  .scroll-visible {
+    opacity: 1; /* Rend l'élément visible */
+    transform: translateY(0); /* Remet l'élément à sa position d'origine */
+  }
 }
