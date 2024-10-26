@@ -12,7 +12,7 @@ export default function ProjectCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group md:h-[500px] inline-flex flex-1 hover:flex-[4] flex-col bg-[--color-dark-bg] transition-all duration-300 hover:bg-[--color-pink] dark:hover:bg-[--color-pink] relative before:absolute before:inset-0 before:bg-gradient-to-t before:from-black before:via-transparent before:content-['']"
+      className="group md:h-[500px] inline-flex flex-1 hover:flex-[4] flex-col bg-[--color-dark-bg] transition-all duration-700 hover:bg-[--color-pink] dark:hover:bg-[--color-pink] relative before:absolute before:inset-0 before:bg-gradient-to-t before:from-black before:via-transparent before:content-['']"
       style={{
         backgroundImage: `url(${imageSrc})`,
         backgroundSize: "cover",
