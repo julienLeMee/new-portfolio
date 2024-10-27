@@ -1,4 +1,7 @@
 export function initGlowAnimation() {
+    // Check if the code is running in the browser
+    if (typeof document === 'undefined' || typeof window === 'undefined') return;
+
     const glowingCards = document.querySelectorAll(".glow-section__card");
     const glowSection = document.querySelector(".glow-section");
 
