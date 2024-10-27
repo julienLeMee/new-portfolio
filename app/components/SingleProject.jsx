@@ -6,12 +6,12 @@ import { useEffect } from "react";
 import { initGlowAnimation } from "../../animations/glowAnimation";
 
 const SingleProject = ({
-    title,
-    description,
-    imageSrc,
-    technologies,
-    keyFeatures,
-    link,
+  title,
+  description,
+  imageSrc,
+  technologies,
+  keyFeatures,
+  link,
 }) => {
   useEffect(() => {
     const cleanupGlowAnimation = initGlowAnimation();
@@ -34,9 +34,11 @@ const SingleProject = ({
       <h3 className="mb-4 pt-8 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Overview
       </h3>
-      <p className="dark:text-white text-[--color-dark-text] my-2">
-        {description}
-      </p>
+      {description.map((feature, index) => (
+        <div key={index} className="dark:text-white text-[--color-dark-text] my-2">
+          <strong>{feature.title ? `${feature.title}:` : ""}</strong> {feature.text}
+        </div>
+      ))}
       <h3 className="mb-4 pt-10 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Technologies
       </h3>
@@ -62,7 +64,11 @@ const SingleProject = ({
                   {feature.text}
                 </span>
               </div>
-              <div className={`glow-section__blob glow-section__blob--${index + 1}`}></div>
+              <div
+                className={`glow-section__blob glow-section__blob--${
+                  index + 1
+                }`}
+              ></div>
             </li>
           ))}
         </ul>

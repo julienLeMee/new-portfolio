@@ -32,7 +32,7 @@ export default function Home() {
           <Hero />
           <RevealText />
           <Projects />
-          {/* <InfiniteSlider /> */}
+          <InfiniteSlider />
           <ContactForm />
           <Scene />
           {/* <DotBg /> */}

@@ -61,7 +61,10 @@ export function ContactForm() {
       const recaptchaData = await recaptchaResponse.json();
 
       if (!recaptchaData.success) {
-        console.error("reCAPTCHA verification failed:", recaptchaData.errorCodes);
+        console.error(
+          "reCAPTCHA verification failed:",
+          recaptchaData.errorCodes
+        );
         return;
       }
 
@@ -93,7 +96,7 @@ export function ContactForm() {
     <>
       <div
         id="#lets-get-in-touch"
-        className="max-w-screen-sm p-3 md:p-6 lg:p-10 flex flex-col text-center mx-auto"
+        className="max-w-screen-sm p-3 md:p-6 lg:p-10 flex flex-col text-center mx-auto mt-32"
       >
         <p className="min-w-full pb-1 font-mono text-[13px] uppercase">
           [003. Let's get in touch]

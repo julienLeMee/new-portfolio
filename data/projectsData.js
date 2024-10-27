@@ -3,8 +3,40 @@ const projects = [
   {
     imageSrc: "/projects/yum-list.jpeg",
     title: "Yum list",
-    description:
-      "Progressive Web App. Organize your favorite restaurants, whether they are tested or to discover. Connect with your friends and share your favorite addresses.",
+    description: [
+      {
+        title: "Progressive Web App (PWA)",
+        text: "The application is a PWA, enabling offline use, the ability to add it to the home screen, and providing a fast, responsive experience.",
+      },
+      {
+        title: "Display Restaurants by Category",
+        text: "Restaurants are organized by category, making it easy to browse by type of cuisine or restaurant.",
+      },
+      {
+        title: "Restaurant Details",
+        text: "Each restaurant includes a detailed description and relevant information.",
+      },
+      {
+        title: "Friends' Restaurant Lists",
+        text: "View and explore the favorite restaurant lists of your friends, categorized and organized.",
+      },
+      {
+        title: "Responsive Design",
+        text: "The application is optimized for both desktop and mobile devices.",
+      },
+      {
+        title: "Search and Filtering",
+        text: "Users can search for and filter restaurants according to their preferences.",
+      },
+      {
+        title: "Community",
+        text: "Users can add friends to see their restaurant lists.",
+      },
+      {
+        title: "Map Integration",
+        text: "Restaurants are also displayed on an interactive map for easy location viewing.",
+      },
+    ],
     technologies: [
       { name: "Ruby on rails", logo: "/logos/rails.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -32,7 +64,7 @@ const projects = [
   {
     imageSrc: "/projects/tesla.jpeg",
     title: "Tesla Clone",
-    description: "A clone of Tesla's beautiful website.",
+    description: [{ title: "", text: "A clone of Tesla's beautiful website." }],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -55,7 +87,12 @@ const projects = [
   {
     imageSrc: "/projects/nike.jpg",
     title: "Nike Clone",
-    description: "A responsive clone of Nike's e-commerce platform.",
+    description: [
+      {
+        title: "",
+        text: "A responsive clone of Nike's e-commerce platform.",
+      },
+    ],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -82,7 +119,16 @@ const projects = [
   {
     imageSrc: "/projects/disney.jpeg",
     title: "Disney Clone",
-    description: "A clone of Disney's streaming service interface.",
+    description: [
+      {
+        title: "",
+        text: "A clone of Disney's streaming service interface.",
+      },
+      {
+        title: "API Integration",
+        text: "Integration with The Movie DB API for streaming content simulation.",
+      },
+    ],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "The Movie DB API", logo: "/logos/the-movie-db.svg" },
@@ -110,7 +156,12 @@ const projects = [
   {
     imageSrc: "/projects/star-wars-empire-base.png",
     title: "Star wars Imperial Base",
-    description: "A 3D interactive experience inspired by Star Wars.",
+    description: [
+      {
+        title: "Three JS project",
+        text: "A 3D interactive experience inspired by Star Wars.",
+      },
+    ],
     technologies: [
       { name: "Three JS", logo: "/logos/threejs.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
@@ -137,7 +188,17 @@ const projects = [
   {
     imageSrc: "/projects/la-ferme-de-novelle.jpeg",
     title: "La ferme de Novelle",
-    description: "A website for a local farm featuring a map and store.",
+    description: [
+      {
+        title: "",
+        text: "A website for a local farm featuring a map and store.",
+      },
+      { title: "OpenWeather API Integration", text: "Add live weather data" },
+      {
+        title: "Map Integration",
+        text: "Interactive map integration using MapBox for easy navigation.",
+      },
+    ],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "MapBox API", logo: "/logos/mapbox.svg" },
@@ -165,7 +226,9 @@ const projects = [
   {
     imageSrc: "/projects/la-berjotine.jpg",
     title: "La Berjotine",
-    description: "A website for a french guesthouse.",
+    description: [
+      { title: "", text: "A website for a French guesthouse." }
+    ],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "Tailwind", logo: "/logos/tailwindcss.svg" },

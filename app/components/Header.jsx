@@ -56,7 +56,7 @@ export default function Header() {
       <div className="w-full max-w-[1920px] mx-auto py-4 flex justify-between items-center z-50">
         <Link
           href="/"
-          className="text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
+          className="group text-base font-bold leading-[1.1] flex gap-2 items-center dark:text-[--color-pink] text-[--color-dark-text]"
         >
           <svg
             width="48px"
@@ -64,6 +64,7 @@ export default function Header() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="194.75625 -2.799999999999997 110.4875 155.6"
             preserveAspectRatio="xMidYMid"
+            className="group-hover:logo-rotate"
           >
             <defs>
               <filter id="editing-extrude-glow">

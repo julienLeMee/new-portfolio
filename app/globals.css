@@ -95,7 +95,7 @@ html {
     @apply bg-background text-foreground;
   }
 
-  @keyframes rotate {
+  @keyframes logo-rotate {
     0% {
       transform: rotate(0deg);
     }
@@ -104,8 +104,8 @@ html {
     }
   }
 
-  .rotate {
-    animation: rotate 4s linear infinite;
+  .logo-rotate {
+    animation: logo-rotate .8s cubic-bezier(0.68,-0.55,0.27,1.55);
   }
 
   .scrollbar-hide {
