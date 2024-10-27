@@ -75,7 +75,7 @@ const SingleProject = ({
       </div>
       <Link
         href={link}
-        className="w-fit flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
+        className="group w-fit flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
         target="_blank"
       >
         <svg
@@ -86,6 +86,7 @@ const SingleProject = ({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           color="currentColor"
+          className="group-hover:logo-rotate"
         >
           <path
             d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005"
