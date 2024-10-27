@@ -182,12 +182,12 @@ html {
   ** Glow cards effect
   */
   .glow-section {
-    height: auto;
+    /* height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 14px; */
   }
 
   .glow-section__card {
@@ -233,7 +233,7 @@ html {
     border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.8);
   }
-  .glow-section__blob--1 {
+  .glow-section__blob.glow-section__blob--1 {
     background-image: linear-gradient(
         90deg,
         rgb(237, 237, 237),
@@ -286,10 +286,25 @@ html {
       );
     background-blend-mode: overlay, overlay, overlay, normal;
   }
-  .glow-section__blob--2 {
+  .glow-section__blob.glow-section__blob--2 {
     background: rgb(255, 255, 255, 0.8);
   }
-  .glow-section__blob--3 {
-    background-color: rgb(15, 224, 235);
+  .glow-section__blob.glow-section__blob--3 {
+    background-image: linear-gradient(
+      45deg,
+      hsl(70deg 74% 46%) 0%,
+      hsl(85deg 63% 53%) 8%,
+      hsl(106deg 60% 59%) 17%,
+      hsl(134deg 63% 58%) 25%,
+      hsl(157deg 96% 43%) 33%,
+      hsl(164deg 100% 42%) 42%,
+      hsl(171deg 100% 42%) 50%,
+      hsl(177deg 100% 42%) 58%,
+      hsl(182deg 100% 43%) 67%,
+      hsl(187deg 100% 46%) 75%,
+      hsl(190deg 100% 48%) 83%,
+      hsl(192deg 100% 49%) 92%,
+      hsl(194deg 100% 50%) 100%
+    );
   }
 }

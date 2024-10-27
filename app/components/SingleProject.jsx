@@ -37,10 +37,10 @@ const SingleProject = ({
       <p className="dark:text-white text-[--color-dark-text] my-2">
         {description}
       </p>
-      <h3 className="mb-4 pt-8 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
+      <h3 className="mb-4 pt-10 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Technologies
       </h3>
-      <div className="dark:text-white text-[--color-dark-text] my-2">
+      <div className="dark:text-white text-[--color-dark-text] my-8">
         <ul className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <li key={index} className="flex flex-col items-center gap-1">
@@ -49,10 +49,10 @@ const SingleProject = ({
           ))}
         </ul>
       </div>
-      <h3 className="mb-4 pt-8 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
+      <h3 className="mb-4 pt-6 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Key Features
       </h3>
-      <div className="glow-section dark:text-white text-[--color-dark-text] my-2">
+      <div className="dark:text-white text-[--color-dark-text] my-8">
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           {keyFeatures.map((feature, index) => (
             <li key={feature.text} className="glow-section__card">
