@@ -1,16 +1,26 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { ShinyBadge } from "./ShinyBadge";
+import { useEffect } from "react";
+import { initGlowAnimation } from "../../animations/glowAnimation";
 
 const SingleProject = ({
-  title,
-  description,
-  imageSrc,
-  technologies,
-  keyFeatures,
-  link,
+    title,
+    description,
+    imageSrc,
+    technologies,
+    keyFeatures,
+    link,
 }) => {
+  useEffect(() => {
+    const cleanupGlowAnimation = initGlowAnimation();
+
+    return () => {
+      cleanupGlowAnimation();
+    };
+  }, []);
+
   return (
     <div className="pb-20">
       <h2 className="dark:text-white text-[--color-dark-text] text-2xl font-bold">
@@ -42,26 +52,24 @@ const SingleProject = ({
       <h3 className="mb-4 pt-8 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Key Features
       </h3>
-      <div className="dark:text-white text-[--color-dark-text] my-2">
+      <div className="glow-section dark:text-white text-[--color-dark-text] my-2">
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-          {keyFeatures.map((feature) => (
-            <li
-              key={feature.text}
-              className="flex flex-col gap-4 justify-start border border-gray-300 rounded-md shadow-sm p-4"
-            >
-              <img
-                src={feature.icon}
-                alt=""
-                className="w-10 h-10"
-              />
-              <span className="mt-4 text-lg font-medium">{feature.text}</span>
+          {keyFeatures.map((feature, index) => (
+            <li key={feature.text} className="glow-section__card">
+              <div className="glow-section__top-layer">
+                <img src={feature.icon} alt="" className="w-10 h-10" />
+                <span className="glow-section__top-layer-text mt-4 text-lg font-medium">
+                  {feature.text}
+                </span>
+              </div>
+              <div className={`glow-section__blob glow-section__blob--${index + 1}`}></div>
             </li>
           ))}
         </ul>
       </div>
       <Link
         href={link}
-        className="w-fit flex items-center gap-2 pt-8 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
+        className="w-fit flex items-center gap-2 text-sm dark:text-white dark:hover:text-[--color-pink] text-[--color-dark-text] hover:text-[--color-pink] hover:underline"
         target="_blank"
       >
         <svg

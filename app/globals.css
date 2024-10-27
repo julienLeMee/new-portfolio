@@ -177,4 +177,119 @@ html {
     opacity: 1; /* Rend l'élément visible */
     transform: translateY(0); /* Remet l'élément à sa position d'origine */
   }
+
+  /*
+  ** Glow cards effect
+  */
+  .glow-section {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .glow-section__card {
+    flex-shrink: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 5px;
+    background-color: rgb(128, 128, 128, 0.1);
+  }
+
+  .glow-section__top-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 7px;
+    height: 100%;
+    font-size: 28px;
+    background-color: rgb(26, 26, 26);
+    transition: background-color 0.4s ease-out;
+  }
+  .glow-section__top-layer-text {
+    color: #d2d2d2;
+  }
+  @media (pointer: fine) {
+    .glow-section__card:hover > .glow-section__top-layer {
+      background: rgb(26, 26, 26, 0.9);
+    }
+  }
+  .glow-section__blob {
+    filter: blur(40px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+  .glow-section__blob--1 {
+    background-image: linear-gradient(
+        90deg,
+        rgb(237, 237, 237),
+        rgb(236, 236, 236)
+      ),
+      linear-gradient(
+        135deg,
+        rgb(163, 125, 62) 0%,
+        rgb(163, 125, 62) 22%,
+        rgb(149, 100, 59) 22%,
+        rgb(149, 100, 59) 32%,
+        rgb(134, 75, 56) 32%,
+        rgb(134, 75, 56) 37%,
+        rgb(120, 50, 53) 37%,
+        rgb(120, 50, 53) 51%,
+        rgb(105, 25, 50) 51%,
+        rgb(105, 25, 50) 55%,
+        rgb(91, 0, 47) 55%,
+        rgb(91, 0, 47) 100%
+      ),
+      linear-gradient(
+        112.5deg,
+        rgb(163, 125, 62) 0%,
+        rgb(163, 125, 62) 22%,
+        rgb(149, 100, 59) 22%,
+        rgb(149, 100, 59) 32%,
+        rgb(134, 75, 56) 32%,
+        rgb(134, 75, 56) 37%,
+        rgb(120, 50, 53) 37%,
+        rgb(120, 50, 53) 51%,
+        rgb(105, 25, 50) 51%,
+        rgb(105, 25, 50) 55%,
+        rgb(91, 0, 47) 55%,
+        rgb(91, 0, 47) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(163, 125, 62) 0%,
+        rgb(163, 125, 62) 22%,
+        rgb(149, 100, 59) 22%,
+        rgb(149, 100, 59) 32%,
+        rgb(134, 75, 56) 32%,
+        rgb(134, 75, 56) 37%,
+        rgb(120, 50, 53) 37%,
+        rgb(120, 50, 53) 51%,
+        rgb(105, 25, 50) 51%,
+        rgb(105, 25, 50) 55%,
+        rgb(91, 0, 47) 55%,
+        rgb(91, 0, 47) 100%
+      );
+    background-blend-mode: overlay, overlay, overlay, normal;
+  }
+  .glow-section__blob--2 {
+    background: rgb(255, 255, 255, 0.8);
+  }
+  .glow-section__blob--3 {
+    background-color: rgb(15, 224, 235);
+  }
 }
