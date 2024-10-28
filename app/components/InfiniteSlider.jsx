@@ -20,6 +20,10 @@ const technologies = [
         img: "/logos/jira.svg",
     },
     {
+        name: "React",
+        img: "/logos/react.svg",
+    },
+    {
         name: "Next.js",
         img: "/logos/nextjs.svg",
     },
