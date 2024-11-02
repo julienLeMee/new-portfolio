@@ -35,8 +35,12 @@ const SingleProject = ({
         Overview
       </h3>
       {description.map((feature, index) => (
-        <div key={index} className="dark:text-white text-[--color-dark-text] my-2">
-          <strong>{feature.title ? `${feature.title}:` : ""}</strong> {feature.text}
+        <div
+          key={index}
+          className="dark:text-white text-[--color-dark-text] my-2"
+        >
+          <strong>{feature.title ? `${feature.title}:` : ""}</strong> <br />
+          <p className="text-sm mt-2 mb-4">{feature.text}</p>
         </div>
       ))}
       <h3 className="mb-4 pt-10 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">

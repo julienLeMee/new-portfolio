@@ -60,6 +60,37 @@ const projects = [
     link: "https://yum-list-aged-water-5075.fly.dev/",
     github: "https://github.com/julienLeMee/yum-list",
   },
+  // QUICK REPO
+  {
+    imageSrc: "/projects/quick-repo.png",
+    title: "Quick Repo",
+    description: [
+      {
+        title: "Manage Your Repositories Effortlessly",
+        text: "Quick Repo is a lightweight desktop application designed to simplify the management and access of your Git repositories. Built with Electron, this tool lets you view, open, and organize repositories directly from your system tray with just a few clicks.",
+      },
+    ],
+    technologies: [
+      { name: "Electron", logo: "/logos/electron.svg" },
+      { name: "Javascript", logo: "/logos/javascript.svg" },
+    ],
+    keyFeatures: [
+      {
+        text: "Quick access to repositories via system tray",
+        icon: "/icons/imac-icon.svg",
+      },
+      {
+        text: "Open repositories directly in VS Code",
+        icon: "/icons/open-icon.svg",
+      },
+      {
+        text: "Add and remove repositories easily",
+        icon: "/icons/add-icon.svg",
+      },
+    ],
+    link: "",
+    github: "",
+  },
   // TESLA CLONE
   {
     imageSrc: "/projects/tesla.jpeg",
@@ -226,9 +257,7 @@ const projects = [
   {
     imageSrc: "/projects/la-berjotine.jpg",
     title: "La Berjotine",
-    description: [
-      { title: "", text: "A website for a French guesthouse." }
-    ],
+    description: [{ title: "", text: "A website for a French guesthouse." }],
     technologies: [
       { name: "Next JS", logo: "/logos/nextjs.svg" },
       { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
