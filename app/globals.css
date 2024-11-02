@@ -105,7 +105,7 @@ html {
   }
 
   .logo-rotate {
-    animation: logo-rotate .8s cubic-bezier(0.68,-0.55,0.27,1.55);
+    animation: logo-rotate 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   .scrollbar-hide {
@@ -201,10 +201,9 @@ html {
     background-color: rgb(128, 128, 128, 0.1);
   }
 
-  .glow-section__top-layer {
+  html.dark .glow-section__top-layer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding: 2rem;
     border-radius: 7px;
@@ -213,12 +212,29 @@ html {
     background-color: rgb(26, 26, 26);
     transition: background-color 0.4s ease-out;
   }
-  .glow-section__top-layer-text {
+  html:not(.dark) .glow-section__top-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 7px;
+    height: 100%;
+    font-size: 28px;
+    background-color: transparent;
+    transition: background-color 0.4s ease-out;
+  }
+  html.dark .glow-section__top-layer-text {
     color: #d2d2d2;
   }
+  html:not(.dark) .glow-section__top-layer-text {
+    color: #181818;
+  }
   @media (pointer: fine) {
-    .glow-section__card:hover > .glow-section__top-layer {
+    html.dark .glow-section__card:hover > .glow-section__top-layer {
       background: rgb(26, 26, 26, 0.9);
+    }
+    html:not(.dark) .glow-section__card:hover > .glow-section__top-layer {
+      background: transparent;
     }
   }
   .glow-section__blob {
@@ -286,8 +302,11 @@ html {
       );
     background-blend-mode: overlay, overlay, overlay, normal;
   }
-  .glow-section__blob.glow-section__blob--2 {
+  html.dark .glow-section__blob.glow-section__blob--2 {
     background: rgb(255, 255, 255, 0.8);
+  }
+  html:not(.dark) .glow-section__blob.glow-section__blob--2 {
+    background: rgba(101, 202, 54, 0.8);
   }
   .glow-section__blob.glow-section__blob--3 {
     background-image: linear-gradient(
