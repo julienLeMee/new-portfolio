@@ -69,6 +69,10 @@ const projects = [
         title: "Manage Your Repositories Effortlessly",
         text: "Quick Repo is a lightweight desktop application designed to simplify the management and access of your Git repositories. Built with Electron, this tool lets you view, open, and organize repositories directly from your system tray with just a few clicks.",
       },
+      {
+        title: "Easy Installation",
+        text: "Setting up Quick Repo is a breeze! Install it with a single NPM command, making the process fast and simple for any developer to get started right away.",
+      },
     ],
     technologies: [
       { name: "Electron", logo: "/logos/electron.svg" },
