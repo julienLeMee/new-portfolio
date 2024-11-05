@@ -73,6 +73,7 @@ const projects = [
     technologies: [
       { name: "Electron", logo: "/logos/electron.svg" },
       { name: "Javascript", logo: "/logos/javascript.svg" },
+      { name: "NPM", logo: "/logos/npm.svg" },
     ],
     keyFeatures: [
       {
