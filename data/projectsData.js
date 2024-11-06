@@ -62,7 +62,7 @@ const projects = [
   },
   // QUICK REPO
   {
-    imageSrc: "/projects/quick-repo.png",
+    imageSrc: "/projects/quick-repo-toolbar.png",
     title: "Quick Repo",
     description: [
       {
