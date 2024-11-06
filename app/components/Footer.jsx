@@ -251,7 +251,7 @@ export default function Footer() {
           </div>
           <div className="mt-4 text-xs flex justify-end w-full text-[#181818]/50">
             Design largely inspired by Awwwards submissions, particularly from
-            hellohelloteam, seb_sma, and pablo-picart.
+            hellohelloteam.
           </div>
         </div>
       </div>
