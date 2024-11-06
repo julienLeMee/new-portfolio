@@ -29,7 +29,7 @@ const SingleProject = ({
       <img
         src={imageSrc}
         alt={title}
-        className="w-full my-4 rounded-lg overflow-hidden aspect-video object-cover max-h-[370px]"
+        className="w-full my-4 rounded-lg overflow-hidden aspect-video object-cover max-h-[450px]"
       />
       <h3 className="mb-4 pt-8 border-b border-[#787878] font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
         Overview
