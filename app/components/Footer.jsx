@@ -1,12 +1,18 @@
-import Image from "next/image";
+"use client";
+
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <>
       <div className="p-3 md:p-6 lg:p-10 flex flex-col">
-        <p className="max-w-[1920px] min-w-full pb-8 font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
-          [004. Thanks for your time]
-        </p>
+        {pathname === "/" && (
+          <p className="max-w-[1920px] min-w-full pb-8 font-mono text-[13px] uppercase dark:text-[--color-pink] text-[--color-dark-text]">
+            [004. Thanks for your time]
+          </p>
+        )}
         <div className="mx-auto w-full max-w-[1920px] flex flex-col rounded-2xl bg-[--color-pink] px-3 pb-5 pt-4 text-black md:px-8 md:pb-8 md:pt-11">
           <p className="flex w-[80%] flex-1 text-[32px] font-medium leading-[0.95] md:w-[66%] md:text-[56px] lg:min-w-[780px]">
             Based in Montréal.
@@ -17,11 +23,14 @@ export default function Footer() {
             </p>
             <div className="flex flex-row items-center justify-stretch gap-x-2 py-4 md:w-3/5 md:justify-end md:py-0 md:pl-6 lg:w-auto">
               <a
-                href="https://github.com/julienLeMee"
-                target="_blank"
+                href={
+                  pathname === "/"
+                    ? "/projects/"
+                    : "https://github.com/julienLeMee"
+                }
                 className="relative inline-flex items-center justify-center rounded-lg font-mono font-medium uppercase transition-all duration-200 border border-solid border-black bg-black text-white backdrop-blur-[10px] md:hover:bg-white md:hover:border-white md:hover:text-black text-[15px] h-[44px] px-2 sm:px-6 disabled:opacity-30 w-1/2 lg:w-auto"
               >
-                Github
+                {pathname === "/" ? "Projects" : "Github"}
               </a>
               <a
                 href="https://www.linkedin.com/in/julien-le-mee/"

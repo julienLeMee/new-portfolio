@@ -181,15 +181,6 @@ html {
   /*
   ** Glow cards effect
   */
-  .glow-section {
-    /* height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 14px; */
-  }
-
   .glow-section__card {
     flex-shrink: 0;
     border-radius: 10px;
