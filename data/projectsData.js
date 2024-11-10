@@ -280,6 +280,38 @@ const projects = [
     link: "https://www.laberjotine.fr/",
     github: "https://github.com/julienLeMee/la-berjotine",
   },
+  // LUFA FARMS
+{
+    imageSrc: "/projects/lufa-farms.jpeg",
+    title: "Lufa Farms",
+    description: [
+      {
+        title: "",
+        text: "A webpage inspired by Lufa Farms, featuring a user review system that allows customers to rate products and receive personalized feedback based on their ratings."
+      }
+    ],
+    technologies: [
+      { name: "Vue JS", logo: "/logos/vuejs.svg" },
+      { name: "Ruby on Rails", logo: "/logos/rails.svg" },
+      { name: "Tailwind CSS", logo: "/logos/tailwindcss.svg" }
+    ],
+    keyFeatures: [
+      {
+        text: "UI design",
+        icon: "/icons/imac-icon.svg"
+      },
+      {
+        text: "User review and rating system with automated responses",
+        icon: "/icons/star-icon.svg"
+      },
+      {
+        text: "Seamless dynamic content management and routing",
+        icon: "/icons/speed-icon.svg"
+      }
+    ],
+    link: "https://lufa-improvements.vercel.app/",
+    github: "https://github.com/julienLeMee/lufa-improvements"
+  }
 ];
 
 export default projects;
