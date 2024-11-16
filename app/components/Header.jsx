@@ -281,7 +281,7 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu Toggle */}
-            <div className="md:hidden flex">
+            <div className="md:hidden flex mr-2">
               <button
                 className="text-2xl focus:outline-none"
                 onClick={toggleMobileMenu}
