@@ -150,7 +150,7 @@ export default function Header() {
         </div>
 
         {/* Bouton de mode sombre */}
-        <div className="flex items-center space-x-4">
+        <div className="md:flex md:relative absolute right-16 md:right-0 items-center space-x-4">
           <div className="flex">
             <Switch
               checked={isDarkMode}
@@ -159,7 +159,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex">
+          <div className="md:hidden fixed right-4 top-5 bg-[--color-dark-bg] p-2 rounded-lg flex">
             <button
               className="text-2xl focus:outline-none"
               onClick={toggleMobileMenu}
