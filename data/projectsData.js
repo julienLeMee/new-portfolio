@@ -281,37 +281,77 @@ const projects = [
     github: "https://github.com/julienLeMee/la-berjotine",
   },
   // LUFA FARMS
-{
+  {
     imageSrc: "/projects/lufa-farms.jpeg",
     title: "Lufa Farms",
     description: [
       {
         title: "",
-        text: "A webpage inspired by Lufa Farms, featuring a user review system that allows customers to rate products and receive personalized feedback based on their ratings."
-      }
+        text: "A webpage inspired by Lufa Farms, featuring a user review system that allows customers to rate products and receive personalized feedback based on their ratings.",
+      },
     ],
     technologies: [
       { name: "Vue JS", logo: "/logos/vuejs.svg" },
       { name: "Ruby on Rails", logo: "/logos/rails.svg" },
-      { name: "Tailwind CSS", logo: "/logos/tailwindcss.svg" }
+      { name: "Tailwind CSS", logo: "/logos/tailwindcss.svg" },
     ],
     keyFeatures: [
       {
         text: "UI design",
-        icon: "/icons/imac-icon.svg"
+        icon: "/icons/imac-icon.svg",
       },
       {
         text: "User review and rating system with automated responses",
-        icon: "/icons/star-icon.svg"
+        icon: "/icons/star-icon.svg",
       },
       {
         text: "Seamless dynamic content management and routing",
-        icon: "/icons/speed-icon.svg"
-      }
+        icon: "/icons/speed-icon.svg",
+      },
     ],
     link: "https://lufa-improvements.vercel.app/",
-    github: "https://github.com/julienLeMee/lufa-improvements"
-  }
+    github: "https://github.com/julienLeMee/lufa-improvements",
+  },
+  // WORDPRESS
+{
+    imageSrc: "/projects/wordpress.png",
+    title: "WordPress",
+    description: [
+      {
+        title: "Developed WordPress websites",
+        text: "Created custom blocks, integrated specific features, and optimized sites to enhance user experience.",
+      },
+      {
+        title: "Website maintenance and debugging",
+        text: "Efficiently identified and resolved website issues.",
+      },
+      {
+        title: "Plugin analysis and customization",
+        text: "In-depth code analysis of plugins to adapt and extend functionalities based on project-specific needs.",
+      },
+    ],
+    technologies: [
+      { name: "WordPress", logo: "/logos/wordpress.svg" },
+      { name: "PHP", logo: "/logos/php-icon.svg" },
+      { name: "JavaScript", logo: "/logos/javascript.svg" }, // Ajouter JS si pertinent
+    ],
+    keyFeatures: [
+      {
+        text: "Custom block development for unique website needs",
+        icon: "/icons/imac-icon.svg",
+      },
+      {
+        text: "In-depth plugin analysis and customization",
+        icon: "/icons/cube-icon.svg",
+      },
+      {
+        text: "Optimized website performance and debugging",
+        icon: "/icons/speed-icon.svg",
+      },
+    ],
+    link: "#", // Ajouter le lien si disponible
+    github: "#", // Ajouter le repo si disponible
+  },
 ];
 
 export default projects;
