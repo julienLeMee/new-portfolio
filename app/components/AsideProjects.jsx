@@ -19,17 +19,25 @@ const AsideProjects = () => {
         {/* Colonne des onglets */}
         <div className="w-full grid grid-flow-col md:flex overflow-x-auto auto-cols-max hide-scrollbar md:flex-col md:flex-wrap sm:py-16 py-4 pl-6 md:pl-10 sm:pr-0 pr-10 gap-2 sm:w-1/5 bg-transparent">
           {projects.map((project, index) => (
-            <button
-              key={project.id || project.title}
-              onClick={() => handleTabClick(`tab${index + 1}`)}
-              className={`w-fit text-start leading-tight relative inline-flex items-center justify-center rounded-lg px-3 py-1.5 text-sm hover:bg-[white] hover:text-[#181818]  ${
-                activeTab === `tab${index + 1}`
-                  ? "bg-[#E3AFBE] hover:bg-[#E3AFBE] text-[#181818]"
-                  : "bg-[#181818]"
-              }`}
-            >
-              {project.title}
-            </button>
+            <div key={project.id || project.title}>
+              {index === projects.length - 1 && (
+                <div className="w-4/5 border-t border-white/20 my-4 hidden md:flex">
+                  <p className="w-full text-xs text-white/20 mt-2">
+                    Others experiences
+                  </p>
+                </div>
+              )}
+              <button
+                onClick={() => handleTabClick(`tab${index + 1}`)}
+                className={`w-fit text-start leading-tight relative inline-flex items-center justify-center rounded-lg px-3 py-1.5 text-sm hover:bg-[white] hover:text-[#181818] ${
+                  activeTab === `tab${index + 1}`
+                    ? "bg-[#E3AFBE] hover:bg-[#E3AFBE] text-[#181818]"
+                    : "bg-[#181818]"
+                }`}
+              >
+                {project.title}
+              </button>
+            </div>
           ))}
         </div>
 
