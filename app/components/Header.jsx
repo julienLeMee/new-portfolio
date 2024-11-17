@@ -161,7 +161,7 @@ export default function Header() {
           {/* Mobile Menu Toggle */}
           <div className="md:hidden fixed right-4 top-5 bg-[--color-dark-bg] p-2 rounded-lg flex">
             <button
-              className="text-2xl focus:outline-none"
+              className="text-2xl focus:outline-none text-[--color-pink]"
               onClick={toggleMobileMenu}
             >
               {isMobileMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}{" "}
