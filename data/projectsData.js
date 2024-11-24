@@ -312,8 +312,36 @@ const projects = [
     link: "https://lufa-improvements.vercel.app/",
     github: "https://github.com/julienLeMee/lufa-improvements",
   },
+  // PORTFOLIO ROAD
+  {
+    imageSrc: "/projects/portfolio-road.png",
+    title: "Portfolio Road",
+    description: [
+      {
+        title: "About the Game",
+        text: "Mini 2D game to find the link to my portfolio with a retro aesthetic.",
+      },
+    ],
+    technologies: [{ name: "Bitsy", logo: "/logos/bitsy-logo.png" }],
+    keyFeatures: [
+      {
+        text: "Immersive 2D exploration with a retro aesthetic",
+        icon: "/icons/gamepad.svg",
+      },
+      {
+        text: "Creative storytelling guiding users to the portfolio",
+        icon: "/icons/open-book.svg",
+      },
+      {
+        text: "Simple and intuitive gameplay mechanics",
+        icon: "/icons/puzzle.svg",
+      },
+    ],
+    link: "https://julienlemee.itch.io/portfolio-road",
+    github: "#",
+  },
   // WORDPRESS
-{
+  {
     imageSrc: "/projects/wordpress.png",
     title: "WordPress",
     description: [

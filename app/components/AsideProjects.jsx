@@ -21,8 +21,8 @@ const AsideProjects = () => {
           {projects.map((project, index) => (
             <div key={project.id || project.title}>
               {index === projects.length - 1 && (
-                <div className="w-4/5 border-t border-white/20 my-4 hidden md:flex">
-                  <p className="w-full text-xs text-white/20 mt-2">
+                <div className="w-4/5 border-t dark:border-white/20 border-black/20 my-4 hidden md:flex">
+                  <p className="w-full text-xs dark:text-white/20 text-black/20 mt-2">
                     Others experiences
                   </p>
                 </div>
