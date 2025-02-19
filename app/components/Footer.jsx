@@ -253,7 +253,7 @@ export default function Footer() {
               </ul>
               <p className="flex h-[85px] items-end md:h-auto md:pt-10 lg:px-10 lg:pt-0 xl:px-0">
                 <small className="xs:text-[13px] text-[11px] font-normal leading-[1.1] sm:text-[15px] md:text-base md:leading-[1.1] lg:whitespace-nowrap">
-                  ©2024 Julien Le Mee, All right reserved.
+                  ©{new Date().getFullYear()} Julien Le Mee, All right reserved.
                 </small>
               </p>
             </div>
