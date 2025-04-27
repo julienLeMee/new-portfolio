@@ -60,6 +60,52 @@ const projects = [
     link: "https://yum-list-aged-water-5075.fly.dev/",
     github: "https://github.com/julienLeMee/yum-list",
   },
+  // TASKFORGE
+  {
+    imageSrc: "/projects/taskforge-2.png",
+    title: "Taskforge",
+    description: [
+      {
+        title: "Full Stack Project Management Application",
+        text: "A comprehensive project management application built with modern full-stack technologies, allowing users to efficiently manage their personal projects and tasks.",
+      },
+      {
+        title: "Authentication",
+        text: "Complete authentication system.",
+      },
+      {
+        title: "Project Management",
+        text: "Intuitive project creation, modification, and deletion with Kanban-style task management.",
+      },
+      {
+        title: "Modern Design and technology",
+        text: "The application is built with modern technologies, including Next JS, Supabase, Prisma, Zod, Next Auth, and Shadcn UI.",
+      },
+    ],
+    technologies: [
+      { name: "Next JS", logo: "/logos/nextjs.svg" },
+      { name: "Next Auth", logo: "/logos/nextauth.png" },
+      { name: "Supabase", logo: "/logos/supabase.svg" },
+      { name: "Prisma", logo: "/logos/prisma.svg" },
+      { name: "Zod", logo: "/logos/zod.svg" },
+    ],
+    keyFeatures: [
+      {
+        text: "Complete and secure authentication",
+        icon: "/icons/lock-icon.svg",
+      },
+      {
+        text: "Project management with priority board",
+        icon: "/icons/speed-icon.svg",
+      },
+      {
+        text: "Modern design with dark/light mode",
+        icon: "/icons/mobile-icon.svg",
+      },
+    ],
+    link: "https://taskforge-six.vercel.app/",
+    github: "https://github.com/julienLeMee/taskforge",
+  },
   // QUICK REPO
   {
     imageSrc: "/projects/quick-repo-toolbar.png",

@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 import { initAnimations } from "../../animations/projectsAnimation";
 
 export default function Projects() {
+
   const projects = [
     // YUM LIST
     {
@@ -36,6 +37,31 @@ export default function Projects() {
       link: "https://yum-list-aged-water-5075.fly.dev/",
       github: "https://github.com/julienLeMee/yum-list",
     },
+    // TASKFORGE
+    {
+      imageSrc: "/projects/taskforge.png",
+      title: "Taskforge",
+        description: "A task management app with a focus on productivity.",
+        technologies: [
+          { name: "Next JS", logo: "/logos/nextjs.svg" },
+        { name: "Supabase", logo: "/logos/supabase.svg" },
+        { name: "Prisma", logo: "/logos/prisma.svg" },
+        { name: "Next Auth", logo: "/logos/nextauth.png" },
+        { name: "Zod", logo: "/logos/zod.svg" },
+        ],
+        keyFeatures: [
+          {
+            text: "Manage your tasks efficiently",
+            icon: "/icons/speed-icon.svg",
+          },
+          {
+            text: "Collaborate with your team",
+            icon: "/icons/speed-icon.svg",
+          },
+        ],
+        link: "https://taskforge-six.vercel.app/",
+        github: "https://github.com/julienLeMee/taskforge",
+      },
     // LA FERME DE NOVELLE
     {
       imageSrc: "/projects/la-ferme-de-novelle.jpeg",
@@ -62,29 +88,6 @@ export default function Projects() {
         },
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
-      github: "https://github.com/julienLeMee/yum-list",
-    },
-    // TESLA CLONE
-    {
-      imageSrc: "/projects/tesla.jpeg",
-      title: "Tesla Clone",
-      description: "A responsive clone of Tesla's beautiful website.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Javascript", logo: "/logos/javascript.svg" },
-        { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
-      ],
-      keyFeatures: [
-        {
-          text: "Dynamic content loading and routing with Next.js",
-          icon: "/icons/speed-icon.svg",
-        },
-        {
-          text: "Optimized for cross-device responsive design",
-          icon: "/icons/imac-icon.svg",
-        },
-      ],
-      link: "https://teslo-julienlemee-julienlemees-projects.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
     // DISNEY CLONE
