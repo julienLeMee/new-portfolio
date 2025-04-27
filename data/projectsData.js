@@ -67,7 +67,7 @@ const projects = [
     description: [
       {
         title: "Full Stack Project Management Application",
-        text: "A comprehensive project management application built with modern full-stack technologies, allowing users to efficiently manage their personal projects and tasks.",
+        text: "A comprehensive project management application built with modern full-stack technologies, allowing users to efficiently manage their personal projects and tasks with drag and drop feature and status management.",
       },
       {
         title: "Authentication",
@@ -80,6 +80,10 @@ const projects = [
       {
         title: "Modern Design and technology",
         text: "The application is built with modern technologies, including Next JS, Supabase, Prisma, Zod, Next Auth, and Shadcn UI.",
+      },
+      {
+        title: "Drag and Drop",
+        text: "Drag and drop feature and status management.",
       },
     ],
     technologies: [
@@ -95,8 +99,8 @@ const projects = [
         icon: "/icons/lock-icon.svg",
       },
       {
-        text: "Project management with priority board",
-        icon: "/icons/speed-icon.svg",
+        text: "Priority board with drag and drop",
+        icon: "/icons/hand-icon.svg",
       },
       {
         text: "Modern design with dark/light mode",
