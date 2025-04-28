@@ -6,7 +6,6 @@ import ProjectCard from "./ProjectCard";
 import { initAnimations } from "../../animations/projectsAnimation";
 
 export default function Projects() {
-
   const projects = [
     // YUM LIST
     {
@@ -39,29 +38,29 @@ export default function Projects() {
     },
     // TASKFORGE
     {
-      imageSrc: "/projects/taskforge.png",
+      imageSrc: "/projects/taskforge-1.png",
       title: "Taskforge",
-        description: "A task management app with a focus on productivity.",
-        technologies: [
-          { name: "Next JS", logo: "/logos/nextjs.svg" },
+      description: "A task management app with a focus on productivity.",
+      technologies: [
+        { name: "Next JS", logo: "/logos/nextjs.svg" },
         { name: "Supabase", logo: "/logos/supabase.svg" },
         { name: "Prisma", logo: "/logos/prisma.svg" },
         { name: "Next Auth", logo: "/logos/nextauth.png" },
         { name: "Zod", logo: "/logos/zod.svg" },
-        ],
-        keyFeatures: [
-          {
-            text: "Manage your tasks efficiently",
-            icon: "/icons/speed-icon.svg",
-          },
-          {
-            text: "Collaborate with your team",
-            icon: "/icons/speed-icon.svg",
-          },
-        ],
-        link: "https://taskforge-six.vercel.app/",
-        github: "https://github.com/julienLeMee/taskforge",
-      },
+      ],
+      keyFeatures: [
+        {
+          text: "Manage your tasks efficiently",
+          icon: "/icons/speed-icon.svg",
+        },
+        {
+          text: "Collaborate with your team",
+          icon: "/icons/speed-icon.svg",
+        },
+      ],
+      link: "https://taskforge-six.vercel.app/",
+      github: "https://github.com/julienLeMee/taskforge",
+    },
     // LA FERME DE NOVELLE
     {
       imageSrc: "/projects/la-ferme-de-novelle.jpeg",
@@ -117,6 +116,28 @@ export default function Projects() {
       link: "https://disney-clone-julienlemee.vercel.app/",
       github: "https://github.com/julienLeMee/yum-list",
     },
+    // NIKE CLONE
+    // {
+    //   imageSrc: "/projects/nike.jpg",
+    //   title: "Nike Clone",
+    //   description: "A clone of Nike's website interface.",
+    //   technologies: [
+    //     { name: "Next JS", logo: "/logos/nextjs.svg" },
+    //     { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
+    //   ],
+    //   keyFeatures: [
+    //     {
+    //       text: "Responsive and interactive UI design",
+    //       icon: "/icons/mobile-icon.svg",
+    //     },
+    //     {
+    //       text: "Dynamic content loading and routing with Next.js",
+    //       icon: "/icons/speed-icon.svg",
+    //     },
+    //   ],
+    //   link: "https://disney-clone-julienlemee.vercel.app/",
+    //   github: "https://github.com/julienLeMee/yum-list",
+    // },
   ];
 
   useEffect(() => {
