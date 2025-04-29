@@ -60,10 +60,10 @@ const projects = [
     link: "https://yum-list-aged-water-5075.fly.dev/",
     github: "https://github.com/julienLeMee/yum-list",
   },
-  // TASKFORGE
+  // TASKFLOW
   {
-    imageSrc: "/projects/taskforge-2.png",
-    title: "Taskforge",
+    imageSrc: "/projects/taskflow-2.png",
+    title: "Taskflow",
     description: [
       {
         title: "Full Stack Project Management Application",
@@ -107,7 +107,7 @@ const projects = [
         icon: "/icons/mobile-icon.svg",
       },
     ],
-    link: "https://taskforge-six.vercel.app/",
+    link: "https://taskflow-hub.vercel.app/",
     github: "https://github.com/julienLeMee/taskforge",
   },
   // QUICK REPO

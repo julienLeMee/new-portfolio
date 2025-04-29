@@ -36,10 +36,10 @@ export default function Projects() {
       link: "https://yum-list-aged-water-5075.fly.dev/",
       github: "https://github.com/julienLeMee/yum-list",
     },
-    // TASKFORGE
+    // TASKFLOW
     {
-      imageSrc: "/projects/taskforge-1.png",
-      title: "Taskforge",
+      imageSrc: "/projects/taskflow-1.png",
+      title: "Taskflow",
       description: "A task management app with a focus on productivity.",
       technologies: [
         { name: "Next JS", logo: "/logos/nextjs.svg" },
@@ -58,7 +58,7 @@ export default function Projects() {
           icon: "/icons/speed-icon.svg",
         },
       ],
-      link: "https://taskforge-six.vercel.app/",
+      link: "https://taskflow-hub.vercel.app/",
       github: "https://github.com/julienLeMee/taskforge",
     },
     // LA FERME DE NOVELLE
