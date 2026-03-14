@@ -51,7 +51,7 @@ const projects = [
         icon: "/icons/mobile-icon.svg",
       },
       {
-        text: "Swappable AI providers (Gemini 2.0 Flash / Claude Sonnet 4) with bilingual prompt templates produce flashcards and four challenge types per commit.",
+        text: "AI providers (Gemini API) with bilingual prompt templates produce flashcards and four challenge types per commit.",
         icon: "/icons/pin-icon.svg",
       },
       {
