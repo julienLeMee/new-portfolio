@@ -15,12 +15,12 @@ export default function Model() {
         transmission: 1,
         ior: 1.2,
         chromaticAberration: 0.02,
-        backside: true,
+        backside: false,
     };
 
-    useFrame(() => {
-        torus.current.rotation.x += 0.01;
-        torus.current.rotation.z += 0.02;
+    useFrame((_state, delta) => {
+        torus.current.rotation.x += 0.6 * delta;
+        torus.current.rotation.z += 1.2 * delta;
     });
 
     return (

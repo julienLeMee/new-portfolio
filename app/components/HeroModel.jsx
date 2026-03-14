@@ -18,9 +18,9 @@ export default function Model() {
     //     backside: true,
     // };
 
-    useFrame(() => {
-        torus.current.rotation.x += 0.001;
-        torus.current.rotation.z += 0.002;
+    useFrame((_state, delta) => {
+        torus.current.rotation.x += 0.06 * delta;
+        torus.current.rotation.z += 0.12 * delta;
     });
 
     return (
