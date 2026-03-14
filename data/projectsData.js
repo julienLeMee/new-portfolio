@@ -131,6 +131,50 @@ const projects = [
     link: "https://yum-list-aged-water-5075.fly.dev/",
     github: "https://github.com/julienLeMee/yum-list",
   },
+  // YOGA BY CECILE
+  {
+    imageSrc: "/projects/yoga-by-cecile.jpeg",
+    title: "Yoga by Cecile",
+    description: [
+      {
+        title: "Wordpress custom theme",
+        text: "A custom theme for a yoga studio website.",
+      },
+      {
+        title: "Responsive Design",
+        text: "The application is optimized for both desktop and mobile devices.",
+      },
+      {
+        title: "Custom blocks",
+        text: "Custom blocks for the website.",
+      },
+      {
+        title: "Security",
+        text: "Security features for the website.",
+      },
+    ],
+    technologies: [
+      { name: "Wordpress", logo: "/logos/wordpress.svg" },
+      { name: "PHP", logo: "/logos/php-icon.svg" },
+      { name: "Javascript", logo: "/logos/javascript.svg" },
+    ],
+    keyFeatures: [
+      {
+        text: "Custom theme for a yoga studio website",
+        icon: "/icons/mobile-icon.svg",
+      },
+      {
+        text: "Custom theme for a yoga studio website",
+        icon: "/icons/imac-icon.svg",
+      },
+      {
+        text: "Custom blocks for the website",
+        icon: "/icons/cube-icon.svg",
+      },
+    ],
+    link: "https://yogabycecile.com/",
+    github: "https://github.com/julienLeMee/",
+  },
   // TASKFLOW
   {
     imageSrc: "/projects/taskflow-2.png",
