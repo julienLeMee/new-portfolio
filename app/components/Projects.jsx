@@ -16,9 +16,9 @@ export default function Projects() {
         { name: "Python", logo: "/logos/python.svg" },
         { name: "React", logo: "/logos/react.svg" },
         { name: "Supabase", logo: "/logos/supabase.svg" },
-        { name: "Docker", logo: "/logos/docker.svg" },
         { name: "Github Actions", logo: "/logos/github-actions.svg" },
         { name: "Digital Ocean", logo: "/logos/digitalocean.svg" },
+        { name: "Docker", logo: "/logos/docker.svg" },
         { name: "Lemon Squeezy", logo: "/logos/lemonsqueezy.svg" },
       ],
       keyFeatures: [
