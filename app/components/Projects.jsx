@@ -7,6 +7,37 @@ import { initAnimations } from "../../animations/projectsAnimation";
 
 export default function Projects() {
   const projects = [
+    // VIBE SENSEI
+    {
+      imageSrc: "/projects/vibe-sensei.png",
+      title: "Vibe Sensei",
+      description: "Analyzes your GitHub commits and generates personalized flashcards to make sure you truly understand what your AI produced.",
+      technologies: [
+        { name: "Python", logo: "/logos/python.svg" },
+        { name: "React", logo: "/logos/react.svg" },
+        { name: "Supabase", logo: "/logos/supabase.svg" },
+        { name: "Docker", logo: "/logos/docker.svg" },
+        { name: "Github Actions", logo: "/logos/github-actions.svg" },
+        { name: "Digital Ocean", logo: "/logos/digitalocean.svg" },
+        { name: "Lemon Squeezy", logo: "/logos/lemonsqueezy.svg" },
+      ],
+      keyFeatures: [
+        {
+          text: "Analyzes your GitHub commits and generates personalized flashcards to make sure you truly understand what your AI produced.",
+          icon: "/icons/speed-icon.svg",
+        },
+        {
+          text: "Personalized challenges to make sure you truly understand what your AI produced.",
+          icon: "/icons/speed-icon.svg",
+        },
+        {
+          text: "Progress tracking to see your progress",
+          icon: "/icons/speed-icon.svg",
+        },
+      ],
+      link: "https://vibesensei.app/",
+      github: "https://github.com/julienLeMee/vibe-sensei",
+    },
     // YUM LIST
     {
       imageSrc: "/projects/yum-list.jpeg",
@@ -36,31 +67,6 @@ export default function Projects() {
       link: "https://yum-list-aged-water-5075.fly.dev/",
       github: "https://github.com/julienLeMee/yum-list",
     },
-    // TASKFLOW
-    {
-      imageSrc: "/projects/taskflow-1.png",
-      title: "Taskflow",
-      description: "A task management app with a focus on productivity.",
-      technologies: [
-        { name: "Next JS", logo: "/logos/nextjs.svg" },
-        { name: "Supabase", logo: "/logos/supabase.svg" },
-        { name: "Prisma", logo: "/logos/prisma.svg" },
-        { name: "Next Auth", logo: "/logos/nextauth.png" },
-        { name: "Zod", logo: "/logos/zod.svg" },
-      ],
-      keyFeatures: [
-        {
-          text: "Manage your tasks efficiently",
-          icon: "/icons/speed-icon.svg",
-        },
-        {
-          text: "Collaborate with your team",
-          icon: "/icons/speed-icon.svg",
-        },
-      ],
-      link: "https://taskflow-hub.vercel.app/",
-      github: "https://github.com/julienLeMee/taskforge",
-    },
     // LA FERME DE NOVELLE
     {
       imageSrc: "/projects/la-ferme-de-novelle.jpeg",
@@ -87,7 +93,7 @@ export default function Projects() {
         },
       ],
       link: "https://novelle-farm-rm32n1yoj-julienlemee.vercel.app/",
-      github: "https://github.com/julienLeMee/yum-list",
+      github: "https://github.com/julienLeMee",
     },
     // DISNEY CLONE
     {
@@ -114,7 +120,7 @@ export default function Projects() {
         },
       ],
       link: "https://disney-clone-julienlemee.vercel.app/",
-      github: "https://github.com/julienLeMee/yum-list",
+      github: "https://github.com/julienLeMee",
     },
     // NIKE CLONE
     // {
@@ -136,7 +142,7 @@ export default function Projects() {
     //     },
     //   ],
     //   link: "https://disney-clone-julienlemee.vercel.app/",
-    //   github: "https://github.com/julienLeMee/yum-list",
+    //   github: "https://github.com/julienLeMee",
     // },
   ];
 

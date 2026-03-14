@@ -74,14 +74,14 @@ export default function Menu() {
                 onMouseEnter={() =>
                   setHoveredItem({
                     title: "Full stack web developer",
-                    description: "PHP | Wordpress | JS",
+                    description: "Next JS | Python | React | Docker",
                     href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(255, 189, 122, 0), rgba(255, 189, 122, 1))",
                   })
                 }
               >
-                WordPress websites | Debugging | Analysis | Customization | Training
+                Next JS | Python | React | Ruby on Rails | Docker
               </ListItem>
               <ListItem
                 href="/docs/installation"
@@ -89,7 +89,7 @@ export default function Menu() {
                 onMouseEnter={() =>
                   setHoveredItem({
                     title: "Freelance",
-                    description: "Next JS | Tailwind | JS",
+                    description: "Next JS | PHP | Wordpress",
                     href: "/projects",
                     backgroundImage:
                       "linear-gradient(to top, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(227, 175, 190, 0), rgba(227, 175, 190, 1))",
