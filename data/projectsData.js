@@ -14,7 +14,7 @@ const projects = [
       },
       {
         title: "AI-generated flashcards & challenges",
-        text: "Each commit is processed by Gemini 2.0 Flash or Claude Sonnet — your choice — to generate Markdown flashcards and four challenge types: MCQ, fill-in-the-blank, debug, and open explanation.",
+        text: "Each commit is processed by Gemini API to generate Markdown flashcards and four challenge types: MCQ, fill-in-the-blank, debug, and open explanation.",
       },
       {
         title: "Progress dashboard",
