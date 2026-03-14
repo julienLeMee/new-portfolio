@@ -1,4 +1,75 @@
 const projects = [
+  // VIBE SENSEI
+  {
+    imageSrc: "/projects/vibe-sensei.png",
+    title: "Vibe Sensei",
+    description: [
+      {
+        title: "Full-stack learning platform",
+        text: "Vibe Sensei automatically analyzes your daily GitHub commits and generates flashcards + coding challenges to make sure you truly understand what you — and your AI tools — produce.",
+      },
+      {
+        title: "Automated commit analysis",
+        text: "A daily scheduler (APScheduler + Redis) fetches your tracked repositories, extracts code diffs, and triggers AI-powered analysis without any manual action.",
+      },
+      {
+        title: "AI-generated flashcards & challenges",
+        text: "Each commit is processed by Gemini 2.0 Flash or Claude Sonnet — your choice — to generate Markdown flashcards and four challenge types: MCQ, fill-in-the-blank, debug, and open explanation.",
+      },
+      {
+        title: "Progress dashboard",
+        text: "A clean Next.js dashboard tracks your flashcards, challenge completion rate, streak, and global score, with per-repository activity and difficulty filters.",
+      },
+      {
+        title: "Multilingual & dark mode",
+        text: "Full FR/EN internationalization via next-intl, system-synced dark mode, and a configurable settings panel to switch AI provider, analysis time, and UI language.",
+      },
+      {
+        title: "CI/CD & automated deployments",
+        text: "Conventional Commits and standard-version enforce a clean versioning workflow. GitHub Actions handles lint, type-check, tests and Docker builds on every push; DigitalOcean App Platform auto-deploys both services on merge to main with zero-downtime rollouts and automatic rollback on failed health checks.",
+      },
+      {
+        title: "Subscription billing",
+        text: "Lemon Squeezy powers the monetization layer — payment links, webhook handling, and license key validation are integrated directly into the platform to manage plan access and upgrades.",
+      },
+    ],
+    technologies: [
+      { name: "React", logo: "/logos/react.svg" },
+      { name: "TypeScript", logo: "/logos/typescript.svg" },
+      { name: "Python", logo: "/logos/python.svg" },
+      { name: "FastAPI", logo: "/logos/fast-api.svg" },
+      { name: "Prisma", logo: "/logos/prisma.svg" },
+      { name: "Supabase", logo: "/logos/supabase.svg" },
+      { name: "Docker", logo: "/logos/docker.svg" },
+      { name: "Github Actions", logo: "/logos/github-actions.svg" },
+      { name: "Digital Ocean", logo: "/logos/digitalocean.svg" },
+      { name: "Lemon Squeezy", logo: "/logos/lemonsqueezy.svg" },
+    ],
+    keyFeatures: [
+      {
+        text: "GitHub OAuth login, repository selection, and encrypted token storage — commit diffs are fetched automatically every day at a time you configure.",
+        icon: "/icons/mobile-icon.svg",
+      },
+      {
+        text: "Swappable AI providers (Gemini 2.0 Flash / Claude Sonnet 4) with bilingual prompt templates produce flashcards and four challenge types per commit.",
+        icon: "/icons/pin-icon.svg",
+      },
+      {
+        text: "Full-stack architecture: Next.js 14 App Router frontend + FastAPI backend, both containerized, deployed on DigitalOcean App Platform for ~$10/month.",
+        icon: "/icons/share-icon.svg",
+      },
+      {
+        text: "Conventional Commits + standard-version drive a fully automated CI/CD pipeline: GitHub Actions runs lint, type-check, tests and Docker build on every push, then DigitalOcean App Platform auto-deploys on merge to main.",
+        icon: "/icons/pin-icon.svg",
+      },
+      {
+        text: "Subscription billing handled by Lemon Squeezy — payment links, webhooks, and license key validation are integrated directly into the platform.",
+        icon: "/icons/share-icon.svg",
+      },
+    ],
+    link: "https://vibesensei.app/",
+    github: "https://github.com/julienLeMee/vibe-check",
+  },
   // YUM LIST
   {
     imageSrc: "/projects/yum-list.jpeg",

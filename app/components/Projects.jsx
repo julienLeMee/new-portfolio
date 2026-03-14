@@ -15,6 +15,7 @@ export default function Projects() {
       technologies: [
         { name: "Python", logo: "/logos/python.svg" },
         { name: "React", logo: "/logos/react.svg" },
+        { name: "TypeScript", logo: "/logos/typescript.svg" },
         { name: "Supabase", logo: "/logos/supabase.svg" },
         { name: "Github Actions", logo: "/logos/github-actions.svg" },
         { name: "Digital Ocean", logo: "/logos/digitalocean.svg" },
