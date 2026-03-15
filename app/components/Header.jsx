@@ -479,7 +479,7 @@ export default function Header() {
               </g>
             </svg>
             <small className="whitespace-nowrap text-[13px] font-normal leading-[1.1]">
-              ©2024 Julien Le Mee, All right reserved.
+              ©{new Date().getFullYear()} Julien Le Mee, All right reserved.
             </small>
           </div>
         </div>
